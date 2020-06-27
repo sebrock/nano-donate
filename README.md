@@ -1,10 +1,10 @@
-![Nano Donate](https://nanocharts.info/images/nano-donate/logo.png?v=2 "Nano Donate")
+![Banano Donate]()
 
-**Nano Donate** is a browser extension for Google Chrome which allows you to easily make [Nano currency](https://nano.org) donations to participating websites. The website owner specifies the Nano donation address beforehand so you can just concentrate on making the donation.
+**Banano Donate** is a browser extension for Google Chrome which allows you to easily make [Banano currency](https://www.banano.cc) donations to participating websites. The website owner specifies the Banano donation address beforehand so you can just concentrate on making the donation.
 
-Read more about [Nano Donate](https://nanocharts.info/nano-donate.html).
+Read more about [Banano Donate](XXX).
 
-![Nano Donate](https://nanocharts.info/images/nano-donate/nano-donate-screenshot.png?v=2 "Nano Donate in action")
+![Banano Donate](XXX "Nano Donate in action")
 
 ### License
 
