@@ -1,3 +1,4 @@
+//const dataUser = JSON.parse(localStorage.getItem("user"));
 chrome.runtime.onMessage.addListener(function (
   { bananoDonateEntries },
   { tab },
@@ -5,24 +6,27 @@ chrome.runtime.onMessage.addListener(function (
 ) {
   // Only continue if URL doesn't start with "chrome://"
   if (!tab.url.startsWith("chrome://")) {
-    chrome.storage.local.get({ nanoAddressCache: {} }, function ({
-      nanoAddressCache,
+    chrome.storage.local.get({ bananoAddressCache: {} }, function ({
+      bananoAddressCache,
     }) {
-      // Valid Nano address/es found so add tab details to cache
+      // Valid banano address/es found so add tab details to cache
       if (bananoDonateEntries.length) {
-        nanoAddressCache[tab.id] = {
+        bananoAddressCache[tab.id] = {
           url: tab.url,
           bananoDonateEntries,
+          id: tab.id,
         };
-        chrome.storage.local.set({ nanoAddressCache });
+        localStorage.setItem("user", JSON.stringify({ ...bananoAddressCache }));
         chrome.browserAction.setIcon({
           path: "images/nano-donate-active-128.png",
           tabId: tab.id,
         });
         // No Nano addresses found so remove tab details from cache
       } else {
-        delete nanoAddressCache[tab.id];
-        chrome.storage.local.set({ nanoAddressCache });
+        const data = JSON.parse(localStorage.getItem("user"));
+
+        localStorage.removeItem("user", {});
+        localStorage.setItem("user", { bananoAddressCache });
         chrome.browserAction.setIcon({
           path: "images/nano-donate-inactive-128.png",
           tabId: tab.id,
@@ -39,7 +43,6 @@ chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
   chrome.storage.local.get({ nanoAddressCache: {} }, function ({
     nanoAddressCache,
   }) {
-    delete nanoAddressCache[tabId];
-    chrome.storage.local.set({ nanoAddressCache: nanoAddressCache });
+    localStorage.removeItem("user");
   });
 });
