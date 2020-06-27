@@ -23,10 +23,7 @@ chrome.runtime.onMessage.addListener(function (
         });
         // No Nano addresses found so remove tab details from cache
       } else {
-        const data = JSON.parse(localStorage.getItem("user"));
-
-        localStorage.removeItem("user", {});
-        localStorage.setItem("user", { bananoAddressCache });
+        localStorage.setItem("user", JSON.stringify({ ...bananoAddressCache }));
         chrome.browserAction.setIcon({
           path: "images/nano-donate-inactive-128.png",
           tabId: tab.id,

@@ -25,7 +25,6 @@ export const App = () => {
       </>
     );
   }
-
   return (
     <>
       <BananoUser user={JSON.parse(localStorage.getItem("user"))} />
