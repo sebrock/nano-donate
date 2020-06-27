@@ -32,13 +32,8 @@ module.exports = {
         },
       },
       {
-        test: /\.(c|sc)ss$/,
-        include: path.resolve(__dirname, "app"),
-        use: [
-          MiniCssExtractPlugin.loader,
-          { loader: "style-loader" },
-          { loader: "css-loader", options: { sourceMap: true } },
-        ],
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },

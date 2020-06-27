@@ -1,7 +1,7 @@
 var bananoDonateEntries = [];
 
-// Search for 'banano-donate' tags in document
-Array.from(document.getElementsByTagName("nano-donate")).map(function (
+// Search for 'nano-donate' tags in document
+Array.from(document.getElementsByTagName("banano-donate")).map(function (
   nanoDonateTag
 ) {
   let title = nanoDonateTag.getAttribute("data-title");
@@ -22,15 +22,16 @@ Array.from(document.getElementsByTagName("nano-donate")).map(function (
   }
 });
 
-// Search for 'banano' meta tag in document
+console.log(document.getElementsByTagName("meta"));
+
+// Search for 'nano' meta tag in document
 Array.from(document.getElementsByTagName("meta")).filter(function (metaTag) {
   if (metaTag.getAttribute("name") === "banano") {
-    console.log(metaTag);
-    let bananoAddress = metaTag.getAttribute("content");
-    if (/^ban$/.test(bananoAddress)) {
+    let nanoAddress = metaTag.getAttribute("content");
+    if (/^(ban)[13][13-9a-km-uw-z]{59}$/.test(nanoAddress)) {
       bananoDonateEntries.push({
         metaTag: true,
-        address: bananoAddress,
+        address: nanoAddress,
         addressOwner: "This web page",
       });
     }
