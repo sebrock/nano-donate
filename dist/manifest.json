@@ -1,34 +1,27 @@
 {
-  "name": "Nano Donate",
+  "name": "Banano Donate",
   "version": "1.2.0",
-  "description": "Nano donations made easy!",
-  "permissions": [
-    "storage"
-  ],
+  "description": "Banano donations made easy!",
+  "permissions": ["storage"],
   "content_scripts": [
     {
-      "matches": [
-        "http://*/*",
-        "https://*/*"
-      ],
-      "js": ["getNanoDonateData.js"],
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["getbananoDonateData.js"],
       "run_at": "document_idle"
     }
-  ],  
+  ],
   "background": {
-    "scripts": [
-      "background.js"
-    ],
+    "scripts": ["background.js"],
     "persistent": false
   },
   "browser_action": {
-    "default_popup": "popup.html",
+    "default_popup": "extension/index.html",
     "default_icon": {
       "16": "images/nano-donate-inactive-128.png",
       "32": "images/nano-donate-inactive-128.png",
       "48": "images/nano-donate-inactive-128.png",
       "128": "images/nano-donate-inactive-128.png"
-    }    
+    }
   },
   "icons": {
     "16": "images/nano-donate-active-128.png",
@@ -36,6 +29,7 @@
     "48": "images/nano-donate-active-128.png",
     "128": "images/nano-donate-active-128.png"
   },
-  "content_security_policy": "script-src 'self' https://brainblocks.io/brainblocks.min.js; object-src 'self'",
-  "manifest_version": 2
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "manifest_version": 2,
+  "default_locale": "en"
 }
