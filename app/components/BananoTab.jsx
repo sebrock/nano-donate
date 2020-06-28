@@ -15,6 +15,11 @@ const BananoUser = ({ user }) => {
     if (bananoDonateEntries) {
       setUserPage(user[tabs[0].id]);
       setEntries(bananoDonateEntries);
+    } else {
+      chrome.tabs.getSelected(null, function (tab) {
+        var code = "window.location.reload();";
+        chrome.tabs.executeScript(tab.id, { code: code });
+      });
     }
   });
 
