@@ -1,5 +1,8 @@
 {
   "hello": {
     "message": "Hello friends"
+  },
+  "notDonate": {
+    "message": "WebSite doesn't have Banano Donate"
   }
 }

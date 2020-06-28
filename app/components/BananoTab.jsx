@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { getSendURI } from "banano-uri-generator";
 import QRCode from "qrcode";
 import { useHistory } from "react-router-dom";
-
+import BigNumber from "bignumber.js";
+BigNumber.config({ ROUNDING_MODE: 1 });
 const BananoUser = ({ user, ...props }) => {
   const [userpage, setUserPage] = useState({});
   const [banValue, setBanValue] = useState(0);
@@ -15,12 +16,16 @@ const BananoUser = ({ user, ...props }) => {
       if (userTab) {
         const { banActive, bananoDonateEntries } = userTab;
         if (!banActive) {
-          console.log("bateu aqui tb");
           history.push("/not-found");
         }
         if (bananoDonateEntries) {
-          setUserPage(user[tabs[0].id]);
+          setUserPage(userTab);
           setEntries(bananoDonateEntries);
+        } else {
+          chrome.tabs.getSelected(null, function (tab) {
+            var code = "window.location.reload();";
+            chrome.tabs.executeScript(tab.id, { code: code });
+          });
         }
       }
     } catch (e) {
@@ -28,12 +33,16 @@ const BananoUser = ({ user, ...props }) => {
       history.push("/not-found");
     }
   });
+  const convertUnitBan = (value) => {
+    //multiply number by ten then multiply to 10**28
+    let data = Number(value * 10) * Math.pow(10, 28);
+    return BigNumber(data).abs().toFixed();
+  };
 
   const sendBananas = (e, banAddress) => {
     e.preventDefault();
-    console.log(getSendURI(banAddress, banValue));
     QRCode.toDataURL(
-      getSendURI(banAddress, banValue, `Banano donate tip`),
+      getSendURI(banAddress, convertUnitBan(banValue), `Banano donate tip`),
       {
         type: "svg",
       },
