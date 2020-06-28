@@ -1,6 +1,6 @@
 {
   "name": "Banano Donate",
-  "version": "1.2.0",
+  "version": "0.0.2",
   "description": "Banano donations made easy!",
   "permissions": ["storage", "activeTab"],
   "content_scripts": [
