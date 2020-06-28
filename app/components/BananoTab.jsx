@@ -1,25 +1,31 @@
 import React, { useState } from "react";
 import { getSendURI } from "banano-uri-generator";
 import QRCode from "qrcode";
+import { useHistory } from "react-router-dom";
 
-const BananoUser = ({ user }) => {
+const BananoUser = ({ user, ...props }) => {
   const [userpage, setUserPage] = useState({});
   const [banValue, setBanValue] = useState(0);
-
+  const history = useHistory();
   const [entries, setEntries] = useState([{}]);
   const [qrBan, setQR] = useState("");
-
   chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
-    console.log(tabs);
-    const { bananoDonateEntries } = user[tabs[0].id];
-    if (bananoDonateEntries) {
-      setUserPage(user[tabs[0].id]);
-      setEntries(bananoDonateEntries);
-    } else {
-      chrome.tabs.getSelected(null, function (tab) {
-        var code = "window.location.reload();";
-        chrome.tabs.executeScript(tab.id, { code: code });
-      });
+    try {
+      const userTab = user[tabs[0].id];
+      if (userTab) {
+        const { banActive, bananoDonateEntries } = userTab;
+        if (!banActive) {
+          console.log("bateu aqui tb");
+          history.push("/not-found");
+        }
+        if (bananoDonateEntries) {
+          setUserPage(user[tabs[0].id]);
+          setEntries(bananoDonateEntries);
+        }
+      }
+    } catch (e) {
+      console.log(e);
+      history.push("/not-found");
     }
   });
 

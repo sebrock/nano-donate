@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./app/style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;;AAEA;AACA;AACA;AACA;AACA","file":"style.css","sourcesContent":["body {\r\n  background-color: greenyellow;\r\n  width: 300px;\r\n}\r\n\r\n.user__form-tip {\r\n  display: flex;\r\n  align-items: center;\r\n  height: auto;\r\n}\r\n"],"sourceRoot":""}

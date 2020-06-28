@@ -13,6 +13,7 @@ chrome.runtime.onMessage.addListener(function (
         url: tab.url,
         bananoDonateEntries,
         id: tab.id,
+        banActive: true,
       };
       localStorage.setItem("user", JSON.stringify({ ...bananoAddressCache }));
       chrome.browserAction.setIcon({
@@ -21,6 +22,10 @@ chrome.runtime.onMessage.addListener(function (
       });
       // No Nano addresses found so remove tab details from cache
     } else {
+      bananoAddressCache[tab.id] = {
+        banActive: false,
+        url: tab.url,
+      };
       localStorage.setItem("user", JSON.stringify({ ...bananoAddressCache }));
       chrome.browserAction.setIcon({
         path: "images/nano-donate-inactive-128.png",
@@ -34,9 +39,8 @@ chrome.runtime.onMessage.addListener(function (
 
 // When tab removed (closed)
 chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
-  chrome.storage.local.get({ nanoAddressCache: {} }, function ({
-    nanoAddressCache,
-  }) {
-    localStorage.removeItem("user");
-  });
+  const bananoAddressCache = localStorage.getItem("user");
+  const deletedJson = JSON.parse(bananoAddressCache);
+  delete deletedJson[tabId];
+  localStorage.setItem("user", JSON.stringify({ ...deletedJson }));
 });

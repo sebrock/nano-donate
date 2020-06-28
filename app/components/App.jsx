@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import BananoUser from "./BananoTab";
+import NotFoundUser from "./NotFoundUser";
+import { MemoryRouter as Router, Switch, Route } from "react-router-dom";
 
 export const App = () => {
   const [agree, setAgree] = useState(localStorage.getItem("agree"));
@@ -25,9 +27,17 @@ export const App = () => {
       </>
     );
   }
+
   return (
     <>
-      <BananoUser user={JSON.parse(localStorage.getItem("user"))} />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <BananoUser user={JSON.parse(localStorage.getItem("user"))} />
+          </Route>
+          <Route path="/not-found" component={NotFoundUser} />
+        </Switch>
+      </Router>
     </>
   );
 };
