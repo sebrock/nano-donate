@@ -4,20 +4,23 @@ import QRCode from "qrcode";
 
 const BananoUser = ({ user }) => {
   const [userpage, setUserPage] = useState({});
-  const [banValue, setBanValue] = useState({});
+  const [banValue, setBanValue] = useState(0);
 
   const [entries, setEntries] = useState([{}]);
   const [qrBan, setQR] = useState("");
+
   chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+    console.log(tabs);
     const { bananoDonateEntries } = user[tabs[0].id];
-    setUserPage(user[tabs[0].id]);
-    setEntries(bananoDonateEntries);
-    console.log(tabs[0].id);
+    if (bananoDonateEntries) {
+      setUserPage(user[tabs[0].id]);
+      setEntries(bananoDonateEntries);
+    }
   });
 
   const sendBananas = (e, banAddress) => {
     e.preventDefault();
-
+    console.log(getSendURI(banAddress, banValue));
     QRCode.toDataURL(
       getSendURI(banAddress, banValue, `Banano donate tip`),
       {

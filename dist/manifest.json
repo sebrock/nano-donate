@@ -2,7 +2,7 @@
   "name": "Banano Donate",
   "version": "1.2.0",
   "description": "Banano donations made easy!",
-  "permissions": ["storage"],
+  "permissions": ["storage", "activeTab"],
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
