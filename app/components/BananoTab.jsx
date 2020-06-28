@@ -17,6 +17,10 @@ const BananoUser = ({ user, ...props }) => {
         const { banActive, bananoDonateEntries } = userTab;
         if (!banActive) {
           history.push("/not-found");
+          chrome.tabs.getSelected(null, function (tab) {
+            var code = "window.location.reload();";
+            chrome.tabs.executeScript(tab.id, { code: code });
+          });
         }
         if (bananoDonateEntries) {
           setUserPage(userTab);
@@ -67,6 +71,7 @@ const BananoUser = ({ user, ...props }) => {
                 <h3>$BAN:</h3>
                 <input
                   type="text"
+                  value={banValue}
                   onChange={(e) => setBanValue(e.target.value)}
                   placeholder={`Enter amount of Banano to tip`}
                 />

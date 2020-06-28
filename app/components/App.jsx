@@ -13,6 +13,10 @@ export const App = () => {
   };
 
   if (!agree) {
+    chrome.tabs.getSelected(null, function (tab) {
+      var code = "window.location.reload();";
+      chrome.tabs.executeScript(tab.id, { code: code });
+    });
     return (
       <>
         <section>
