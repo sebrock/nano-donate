@@ -7,25 +7,31 @@ BigNumber.config({ ROUNDING_MODE: 1 });
 const BananoUser = ({ user, ...props }) => {
   const [userpage, setUserPage] = useState({});
   const [banValue, setBanValue] = useState(0);
+  const [activeBan, setActiveBan] = useState({});
   const history = useHistory();
   const [entries, setEntries] = useState([{}]);
   const [qrBan, setQR] = useState("");
+  React.useEffect(() => {
+    chrome.tabs.getSelected(null, function (tab) {
+      var code = "window.location.reload();";
+      chrome.tabs.executeScript(tab.id, { code: code });
+    });
+  }, []);
+
   chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
     try {
       const userTab = user[tabs[0].id];
       if (userTab) {
         const { banActive, bananoDonateEntries } = userTab;
+        setActiveBan(banActive);
         if (!banActive) {
           history.push("/not-found");
-          chrome.tabs.getSelected(null, function (tab) {
-            var code = "window.location.reload();";
-            chrome.tabs.executeScript(tab.id, { code: code });
-          });
         }
         if (bananoDonateEntries) {
           setUserPage(userTab);
           setEntries(bananoDonateEntries);
         } else {
+          history.push("/not-found");
           chrome.tabs.getSelected(null, function (tab) {
             var code = "window.location.reload();";
             chrome.tabs.executeScript(tab.id, { code: code });
@@ -37,6 +43,7 @@ const BananoUser = ({ user, ...props }) => {
       history.push("/not-found");
     }
   });
+
   const convertUnitBan = (value) => {
     //multiply number by ten then multiply to 10**28
     let data = Number(value * 10) * Math.pow(10, 28);
@@ -57,6 +64,10 @@ const BananoUser = ({ user, ...props }) => {
       }
     );
   };
+
+  if (!activeBan) {
+    return <p>Carrendo</p>;
+  }
 
   return (
     <>
