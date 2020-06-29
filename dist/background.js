@@ -28,7 +28,7 @@ chrome.runtime.onMessage.addListener(function (
       };
       localStorage.setItem("user", JSON.stringify({ ...bananoAddressCache }));
       chrome.browserAction.setIcon({
-        path: "images/images/icon128.png",
+        path: "images/icon128.png",
         tabId: tab.id,
       });
       // No banano addresses found so remove tab details from cache

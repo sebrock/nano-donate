@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "Banfont";
+  src: url("../../fonts/NeueHansKendrick-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BanAddress";
+  src: url("../fonts/OverpassMono-Regular.ttf") format("truetype");
+}
 body {
-  background-color: greenyellow;
+  background-color: #4cbf4b;
   width: 300px;
 }
-
 .user__form-tip {
   display: flex;
   align-items: center;
