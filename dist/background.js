@@ -31,7 +31,7 @@ chrome.runtime.onMessage.addListener(function (
         path: "images/images/icon128.png",
         tabId: tab.id,
       });
-      // No Nano addresses found so remove tab details from cache
+      // No banano addresses found so remove tab details from cache
     } else {
       bananoAddressCache[tab.id] = {
         banActive: false,
