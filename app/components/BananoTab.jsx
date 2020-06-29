@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { getSendURI } from "banano-uri-generator";
 import QRCode from "qrcode";
 import { useHistory } from "react-router-dom";
@@ -12,6 +12,10 @@ const BananoUser = ({ user, ...props }) => {
   const [entries, setEntries] = useState([{}]);
   const [qrBan, setQR] = useState("");
   const history = useHistory();
+
+  useEffect(() => {
+    refreshTab();
+  }, []);
 
   chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
     try {
