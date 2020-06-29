@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import BananoUser from "./BananoTab";
 import NotFoundUser from "./NotFoundUser";
+import { refreshTab } from "./helper";
 import { MemoryRouter as Router, Switch, Route } from "react-router-dom";
 
 export const App = () => {
   const [agree, setAgree] = useState(localStorage.getItem("agree"));
-  const [userPage, setUser] = useState({});
 
   const isAgree = () => {
     localStorage.setItem("agree", true);
@@ -13,6 +13,7 @@ export const App = () => {
   };
 
   if (!agree) {
+    refreshTab();
     return (
       <>
         <section>

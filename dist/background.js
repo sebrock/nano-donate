@@ -1,5 +1,16 @@
 //const dataUser = JSON.parse(localStorage.getItem("user"));
 bananoAddressCache = {};
+chrome.runtime.onInstalled.addListener(function () {
+  chrome.tabs.query({ currentWindow: true }, function (tabs) {
+    tabs.forEach(function (tab) {
+      console.log(tab);
+      if (!tab.url.startsWith("chrome://")) {
+        var code = "window.location.reload();";
+        chrome.tabs.executeScript(tab.id, { code: code });
+      }
+    });
+  });
+});
 chrome.runtime.onMessage.addListener(function (
   { bananoDonateEntries },
   { tab },
