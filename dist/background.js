@@ -50,8 +50,9 @@ chrome.runtime.onMessage.addListener(function (
 
 // When tab removed (closed)
 chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
+  console.log(tabId);
   const bananoAddressCache = localStorage.getItem("user");
   const deletedJson = JSON.parse(bananoAddressCache);
   delete deletedJson[tabId];
-  localStorage.setItem("user", JSON.stringify({ ...deletedJson }));
+  localStorage.setItem("user", JSON.stringify(deletedJson));
 });
