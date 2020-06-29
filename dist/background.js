@@ -28,10 +28,10 @@ chrome.runtime.onMessage.addListener(function (
       };
       localStorage.setItem("user", JSON.stringify({ ...bananoAddressCache }));
       chrome.browserAction.setIcon({
-        path: "images/nano-donate-active-128.png",
+        path: "images/images/icon128.png",
         tabId: tab.id,
       });
-      // No Nano addresses found so remove tab details from cache
+      // No banano addresses found so remove tab details from cache
     } else {
       bananoAddressCache[tab.id] = {
         banActive: false,
@@ -39,7 +39,7 @@ chrome.runtime.onMessage.addListener(function (
       };
       localStorage.setItem("user", JSON.stringify({ ...bananoAddressCache }));
       chrome.browserAction.setIcon({
-        path: "images/nano-donate-inactive-128.png",
+        path: "images/icon128_inactive.png",
         tabId: tab.id,
       });
     }
