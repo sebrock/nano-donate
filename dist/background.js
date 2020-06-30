@@ -28,16 +28,11 @@ chrome.runtime.onMessage.addListener(function (
       };
       localStorage.setItem("user", JSON.stringify({ ...bananoAddressCache }));
       chrome.browserAction.setIcon({
-        path: "images/images/icon128.png",
+        path: "images/icon128.png",
         tabId: tab.id,
       });
       // No banano addresses found so remove tab details from cache
     } else {
-      bananoAddressCache[tab.id] = {
-        banActive: false,
-        url: tab.url,
-      };
-      localStorage.setItem("user", JSON.stringify({ ...bananoAddressCache }));
       chrome.browserAction.setIcon({
         path: "images/icon128_inactive.png",
         tabId: tab.id,
@@ -50,7 +45,6 @@ chrome.runtime.onMessage.addListener(function (
 
 // When tab removed (closed)
 chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
-  console.log(tabId);
   const bananoAddressCache = localStorage.getItem("user");
   const deletedJson = JSON.parse(bananoAddressCache);
   delete deletedJson[tabId];
