@@ -6,7 +6,7 @@ import NotFoundUser from "./NotFoundUser";
 BigNumber.set({ ROUNDING_MODE: BigNumber.ROUND_UP });
 const BananoUser = ({ user, ...props }) => {
   const [userpage, setUserPage] = useState({});
-  const [banValue, setBanValue] = useState(0);
+  const [banValue, setBanValue] = useState();
   const [activeBan, setActiveBan] = useState(false);
   const [entries, setEntries] = useState([{}]);
   const [qrBan, setQR] = useState("");
@@ -62,28 +62,25 @@ const BananoUser = ({ user, ...props }) => {
 
   return (
     <>
-	<table>
+	<table align="bottom">
 		<td>
 		<img src="../../images/icon128.png"></img>
 		</td>
 		<td>
 		  <section>
-			<h1>Donate to the current website:</h1>
+			<h1>Donate BAN to the current website:</h1>
 			<h2>{userpage.url}</h2>
 			{qrBan ? <img src={qrBan} /> : null}
 			{entries.map((user, index) => {
 			  return (
 				<form key={index} onSubmit={(e) => sendBananas(e, user.address)}>
 				  <section className="user__form-tip">
-					<p>$BAN:</p>
-					<p2>
-					<input
+					<input className="styleOfInput" 
 					  type="text"
 					  value={banValue}
 					  onChange={(e) => setBanValue(e.target.value)}
-					  placeholder={`Enter amount of Banano to donate`}
+					  placeholder={`Enter donation amount`}
 					/>
-					</p2>
 					<button type="submit">Create QR code</button>
 				  </section>
 				</form>

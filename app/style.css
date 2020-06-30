@@ -22,30 +22,33 @@ h2 {
   margin: 5px 0;
   font-size: 16px;
   font-weight: normal;
-  color: white;
+  color: #2a2a2e;
 }
 p {
   margin: 5px 0;
   font-size: 12px;
-  color: white;
-  display: flex;
-  align-items: center;
-}
-p2 {
-  font-family: "BanAddress";
-  margin: 5px 0;
-  font-size: 12px;
   color: #2a2a2e;
   display: flex;
-  align-items: left;
+ }
+table {
+	vertical-align: bottom;
+}
+.styleOfInput{
+  font-family: "BanAddress";
+  color: #2a2a2e;
 }
 .user__form-tip {
-  background: #fbdd11;
+  font-size: 12px;
   border: 0;
-  height: 13px;
   padding: 3px;
-  width: 200px;	
+  width: 490px;	
   display: flex;
-  align-items: center;
   height: auto;
 }
+.styleOfError{
+  font-family: "Banfont";	
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: red;
+  }

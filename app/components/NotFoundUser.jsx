@@ -1,7 +1,7 @@
 import React from "react";
 
 const NotFoundUser = () => {
-  return <h2>{chrome.i18n.getMessage("err_notRegist")}</h2>;
+  return <div ClassName="styleOfError">{chrome.i18n.getMessage("err_notRegist")}</div>;
 };
 
 export default NotFoundUser;

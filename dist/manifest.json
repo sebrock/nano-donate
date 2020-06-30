@@ -1,5 +1,5 @@
 {
-  "name": "Banano Donate",
+  "name": "BananoDonate",
   "version": "0.0.2",
   "description": "Banano donations made easy!",
   "permissions": ["storage", "tabs", "http://*/", "https://*/"],
