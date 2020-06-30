@@ -61,28 +61,37 @@ const BananoUser = ({ user, ...props }) => {
 
   return (
     <>
-      <section>
-        <p>Donate to the current page:</p>
-        <p style={{ fontWeight: "bold" }}>{userpage.url}</p>
-        {qrBan ? <img src={qrBan} /> : null}
-        {entries.map((user, index) => {
-          return (
-            <form key={index} onSubmit={(e) => sendBananas(e, user.address)}>
-              <section className="user__form-tip">
-                <h3>$BAN:</h3>
-                <input
-                  type="text"
-                  value={banValue}
-                  onChange={(e) => setBanValue(e.target.value)}
-                  placeholder={`Enter amount of Banano to tip`}
-                />
-                <button type="submit">Send BAN!</button>
-              </section>
-            </form>
-          );
-        })}
-      </section>
-    </>
+	<table>
+		<td>
+		<img src="../../images/icon128.png"></img>
+		</td>
+		<td>
+		  <section>
+			<h1>Donate to the current website:</h1>
+			<h2>{userpage.url}</h2>
+			{qrBan ? <img src={qrBan} /> : null}
+			{entries.map((user, index) => {
+			  return (
+				<form key={index} onSubmit={(e) => sendBananas(e, user.address)}>
+				  <section className="user__form-tip">
+					<p>$BAN:</p>
+					<p2>
+					<input
+					  type="text"
+					  value={banValue}
+					  onChange={(e) => setBanValue(e.target.value)}
+					  placeholder={`Enter amount of Banano to donate`}
+					/>
+					</p2>
+					<button type="submit">Create QR code</button>
+				  </section>
+				</form>
+			  );
+			})}
+		  </section>
+	  	</td>
+	</table>
+   </>
   );
 };
 export default BananoUser;

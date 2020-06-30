@@ -2,7 +2,7 @@
   "hello": {
     "message": "Hello friends"
   },
-  "notDonate": {
-    "message": "WebSite doesn't have Banano Donate"
+  "err_notRegist": {
+    "message": "Sorry, this website is not registered to receive BananoDonate donations"
   }
 }

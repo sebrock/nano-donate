@@ -7,14 +7,49 @@
   src: url(fonts/OverpassMono-Regular.ttf) format("truetype");
 }
 body {
-  width: 300px;
+  font-family: "Banfont";
+  width: 500px;
   background-image: url(https://banano.cc/assets/bg-faucet.svg);
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+h2 {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+}
+p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+p2 {
+  font-family: "BanAddress";
+  margin: 5px 0;
+  font-size: 12px;
+  color: #2a2a2e;
+  display: flex;
+  align-items: left;
+}
+input {
+  background: #fbdd11;
+  border: 0;
+  height: 13px;
+  padding: 3px;
+  width: 60px;
 }
 .user__form-tip {
   display: flex;
   align-items: center;
   height: auto;
 }
-
 
 /*# sourceMappingURL=style.css.map*/
