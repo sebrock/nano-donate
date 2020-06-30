@@ -55,14 +55,12 @@ chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
 // ====================================================
 //when the tab replace url
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
-  chrome.tabs.getSelected(null, function (tab) {
-    const bananoAddressCache = localStorage.getItem("user");
-    const updateTab = JSON.parse(bananoAddressCache);
-    if (updateTab[tabId]) {
-      if (updateTab[tabId].url.indexOf(tab.url) === -1) {
-        delete updateTab[tabId];
-        localStorage.setItem("user", JSON.stringify(updateTab));
-      }
+  const bananoAddressCache = localStorage.getItem("user");
+  const updateTab = JSON.parse(bananoAddressCache);
+  if (updateTab[tabId]) {
+    if (updateTab[tabId].url.indexOf(tab.url) === -1) {
+      delete updateTab[tabId];
+      localStorage.setItem("user", JSON.stringify(updateTab));
     }
-  });
+  }
 });
