@@ -14,6 +14,7 @@ const BananoUser = ({ user, ...props }) => {
   chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
     console.log(tabs);
     try {
+      console.log(tabs[0].id);
       const userTab = user[tabs[0].id];
       if (userTab) {
         const { banActive, bananoDonateEntries } = userTab;

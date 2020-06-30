@@ -11,6 +11,7 @@ chrome.runtime.onInstalled.addListener(function () {
     });
   });
 });
+
 chrome.runtime.onMessage.addListener(function (
   { bananoDonateEntries },
   { tab },
@@ -49,4 +50,19 @@ chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
   const deletedJson = JSON.parse(bananoAddressCache);
   delete deletedJson[tabId];
   localStorage.setItem("user", JSON.stringify(deletedJson));
+});
+
+// ====================================================
+//when the tab replace url
+chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
+  chrome.tabs.getSelected(null, function (tab) {
+    const bananoAddressCache = localStorage.getItem("user");
+    const updateTab = JSON.parse(bananoAddressCache);
+    if (updateTab[tabId]) {
+      if (updateTab[tabId].url.indexOf(tab.url) === -1) {
+        delete updateTab[tabId];
+        localStorage.setItem("user", JSON.stringify(updateTab));
+      }
+    }
+  });
 });
