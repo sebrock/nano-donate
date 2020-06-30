@@ -17,9 +17,9 @@ export const App = () => {
     return (
       <>
         <section>
-          <h3>Thank you for installing Banano Donate!</h3>
+          <h3>Thank you for installing BananoDonate!</h3>
           <p>
-            <span>Banano Donate</span> is the easiest way to make Banano
+            <span>BananoDonate</span> is the easiest way to make Banano
             currency donations to participating websites.
           </p>
 

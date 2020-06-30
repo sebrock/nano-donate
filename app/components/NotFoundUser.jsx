@@ -1,8 +1,7 @@
 import React from "react";
 
 const NotFoundUser = () => {
-  //console.log("estou aqui");
-  return <h1>{chrome.i18n.getMessage("notDonate")}</h1>;
+  return <h2>{chrome.i18n.getMessage("err_notRegist")}</h2>;
 };
 
 export default NotFoundUser;
