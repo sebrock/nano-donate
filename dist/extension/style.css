@@ -8,8 +8,11 @@
 }
 body {
   font-family: "Banfont";
-  width: 500px;
+  width: 450px;
   background-image: url(https://banano.cc/assets/bg-faucet.svg);
+}
+.main__user-page {
+  display: flex;
 }
 
 h1 {
@@ -29,11 +32,19 @@ p {
   font-size: 12px;
   color: #2a2a2e;
   display: flex;
- }
-table {
-	vertical-align: bottom;
+  word-break: break-all;
+  padding: 5px 0;
 }
-.styleOfInput{
+.user--address {
+  display: flex;
+  align-items: center;
+}
+
+.pepe--user {
+  height: 92px;
+  align-self: flex-end;
+}
+.styleOfInput {
   font-family: "BanAddress";
   color: #2a2a2e;
 }
@@ -41,16 +52,18 @@ table {
   font-size: 12px;
   border: 0;
   padding: 3px;
-  width: 490px;	
+  width: 490px;
   display: flex;
   height: auto;
 }
-.styleOfError{
-  font-family: "Banfont";	
+
+.styleOfError {
+  font-family: "Banfont";
   margin: 5px 0;
   font-size: 18px;
   font-weight: normal;
   color: red;
-  }
+}
+
 
 /*# sourceMappingURL=style.css.map*/

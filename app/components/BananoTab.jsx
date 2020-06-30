@@ -19,17 +19,13 @@ const BananoUser = ({ user, ...props }) => {
       if (userTab) {
         const { banActive, bananoDonateEntries } = userTab;
         setActiveBan(banActive);
-        if (!banActive) {
-          history.push("/not-found");
-        }
         if (bananoDonateEntries) {
           setUserPage(userTab);
           setEntries(bananoDonateEntries);
-        } else {
-          history.push("/not-found");
         }
       }
     } catch (e) {
+      console.log(e);
       history.push("/not-found");
     }
   });
@@ -42,9 +38,8 @@ const BananoUser = ({ user, ...props }) => {
 
   const sendBananas = (e, banAddress) => {
     e.preventDefault();
-    console.log(convertUnitBan(banValue));
     QRCode.toDataURL(
-      getSendURI(banAddress, convertUnitBan(banValue), `Banano donate tip`),
+      getSendURI(banAddress, convertUnitBan(banValue), `BananoDonate tip`),
       {
         type: "svg",
       },
@@ -62,34 +57,52 @@ const BananoUser = ({ user, ...props }) => {
 
   return (
     <>
-	<table align="bottom">
-		<td>
-		<img src="../../images/icon128.png"></img>
-		</td>
-		<td>
-		  <section>
-			<h1>Donate BAN to the current website:</h1>
-			<h2>{userpage.url}</h2>
-			{qrBan ? <img src={qrBan} /> : null}
-			{entries.map((user, index) => {
-			  return (
-				<form key={index} onSubmit={(e) => sendBananas(e, user.address)}>
-				  <section className="user__form-tip">
-					<input className="styleOfInput" 
-					  type="text"
-					  value={banValue}
-					  onChange={(e) => setBanValue(e.target.value)}
-					  placeholder={`Enter donation amount`}
-					/>
-					<button type="submit">Create QR code</button>
-				  </section>
-				</form>
-			  );
-			})}
-		  </section>
-	  	</td>
-	</table>
-   </>
+      <section className="main__user-page">
+        <img src="../../images/icon128.png" className="pepe--user"></img>
+        <section className="main__user--section">
+          {!qrBan ? (
+            <>
+              <h1>Donate BAN to the current website:</h1>
+              <h2>{userpage ? userpage.title : null}</h2>
+            </>
+          ) : (
+            <h1>Scan QR code with Kalium to send donation</h1>
+          )}
+          {qrBan ? <img src={qrBan} className="qrcode--user" /> : null}
+          {entries.map((user, index) => {
+            if (qrBan) {
+              return (
+                <div className="user--address">
+                  <p>{user.address}</p>
+                  <img
+                    src="../../images/copy-clip.png"
+                    style={{ width: "25px", height: "25px" }}
+                  />
+                </div>
+              );
+            }
+            return (
+              <form key={index} onSubmit={(e) => sendBananas(e, user.address)}>
+                <section className="user__form-tip">
+                  <input
+                    className="styleOfInput"
+                    type="text"
+                    value={banValue}
+                    onChange={(e) =>
+                      e.target.value > 0
+                        ? setBanValue(e.target.value)
+                        : setBanValue("")
+                    }
+                    placeholder={`Enter donation amount`}
+                  />
+                  <button type="submit">Create QR code</button>
+                </section>
+              </form>
+            );
+          })}
+        </section>
+      </section>
+    </>
   );
 };
 export default BananoUser;

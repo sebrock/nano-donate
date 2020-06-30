@@ -25,6 +25,7 @@ chrome.runtime.onMessage.addListener(function (
         url: tab.url,
         bananoDonateEntries,
         id: tab.id,
+        title: tab.title,
         banActive: true,
       };
       localStorage.setItem("user", JSON.stringify({ ...bananoAddressCache }));
