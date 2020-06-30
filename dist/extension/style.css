@@ -39,14 +39,12 @@ p2 {
   display: flex;
   align-items: left;
 }
-input {
+.user__form-tip {
   background: #fbdd11;
   border: 0;
   height: 13px;
   padding: 3px;
-  width: 60px;
-}
-.user__form-tip {
+  width: 200px;	
   display: flex;
   align-items: center;
   height: auto;
