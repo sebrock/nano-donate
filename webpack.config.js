@@ -36,12 +36,13 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jp(e*)g|svg|gif)$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: "file-loader",
             options: {
-              name: "images/[hash]-[name].[ext]",
+              name: "[name].[ext]",
+              outputPath: "fonts/",
             },
           },
         ],
@@ -54,6 +55,21 @@ module.exports = {
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+      {
+        test: /\.svg$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              encoding: "utf8",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(jpe?g|png|gif)$/,
+        loader: "url-loader",
       },
     ],
   },

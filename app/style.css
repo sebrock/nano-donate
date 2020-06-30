@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Banfont";
-  src: url("../../fonts/NeueHansKendrick-Regular.ttf") format("truetype");
+  src: url("./fonts/NeueHansKendrick-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "BanAddress";
-  src: url("../fonts/OverpassMono-Regular.ttf") format("truetype");
+  src: url("./fonts/OverpassMono-Regular.ttf") format("truetype");
 }
 body {
-  background-color: #4cbf4b;
   width: 300px;
+  background-image: url(https://banano.cc/assets/bg-faucet.svg);
 }
 .user__form-tip {
   display: flex;
