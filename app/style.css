@@ -14,7 +14,11 @@ body {
 .main__user-page {
   display: flex;
 }
-
+.main__user--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 h1 {
   margin: 5px 0;
   font-size: 18px;
@@ -27,17 +31,27 @@ h2 {
   font-weight: normal;
   color: #2a2a2e;
 }
-p {
+a p {
   margin: 5px 0;
-  font-size: 12px;
+  font-size: 15px;
   color: #2a2a2e;
   display: flex;
   word-break: break-all;
-  padding: 5px 0;
+  padding-top: 10px;
+}
+.main__user--section .qrcode--title {
+  padding-left: 21px;
 }
 .user--address {
+  width: 260px;
   display: flex;
+  align-self: center;
   align-items: center;
+}
+
+.qrcode--user {
+  align-self: center;
+  width: 200px;
 }
 
 .pepe--user {
@@ -49,9 +63,8 @@ p {
   color: #2a2a2e;
 }
 .user__form-tip {
-  font-size: 12px;
-  border: 0;
-  padding: 3px;
+  font-size: 14px;
+  padding: 2px;
   width: 490px;
   display: flex;
   height: auto;
@@ -63,4 +76,32 @@ p {
   font-size: 18px;
   font-weight: normal;
   color: red;
+}
+
+.copy {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  font-size: 16px;
+  background-color: rgba(87, 86, 86, 0.8);
+  bottom: 5;
+  color: white;
+  opacity: 0;
+}
+
+.copy.done {
+  animation: blink 2s ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

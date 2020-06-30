@@ -3,7 +3,10 @@ import { getSendURI } from "banano-uri-generator";
 import QRCode from "qrcode";
 import BigNumber from "bignumber.js";
 import NotFoundUser from "./NotFoundUser";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 BigNumber.set({ ROUNDING_MODE: BigNumber.ROUND_UP });
+
 const BananoUser = ({ user, ...props }) => {
   const [userpage, setUserPage] = useState({});
   const [banValue, setBanValue] = useState();
@@ -66,20 +69,14 @@ const BananoUser = ({ user, ...props }) => {
               <h2>{userpage ? userpage.title : null}</h2>
             </>
           ) : (
-            <h1>Scan QR code with Kalium to send donation</h1>
+            <h1 className="qrcode--title">
+              Scan QR code with Kalium to send donation
+            </h1>
           )}
           {qrBan ? <img src={qrBan} className="qrcode--user" /> : null}
           {entries.map((user, index) => {
             if (qrBan) {
-              return (
-                <div className="user--address">
-                  <p>{user.address}</p>
-                  <img
-                    src="../../images/copy-clip.png"
-                    style={{ width: "25px", height: "25px" }}
-                  />
-                </div>
-              );
+              return <AddressUser address={user.address} />;
             }
             return (
               <form key={index} onSubmit={(e) => sendBananas(e, user.address)}>
@@ -106,3 +103,25 @@ const BananoUser = ({ user, ...props }) => {
   );
 };
 export default BananoUser;
+
+const AddressUser = ({ address }) => {
+  const [addressCopy, setCopy] = useState(false);
+  return (
+    <>
+      <p className={`copy ${addressCopy && `done`}`}>{`Ban Address copied`}</p>
+      <div className="user--address">
+        <a
+          href={`https://creeper.banano.cc/explorer/account/${address}/history`}
+        >
+          <p>{address}</p>
+        </a>
+        <CopyToClipboard text={address} onCopy={() => setCopy(!addressCopy)}>
+          <img
+            src="../../images/copy-clip.png"
+            style={{ width: "25px", height: "25px", cursor: "pointer" }}
+          />
+        </CopyToClipboard>
+      </div>
+    </>
+  );
+};
