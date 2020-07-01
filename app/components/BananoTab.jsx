@@ -131,6 +131,7 @@ const AddressUser = ({ address, setCopy, wasCopied }) => {
       <div className="user--address">
         <a
           href={`https://creeper.banano.cc/explorer/account/${address}/history`}
+          target="_blank"
         >
           <p>{address}</p>
         </a>
