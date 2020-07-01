@@ -33,7 +33,7 @@ h2 {
 }
 a p {
   margin: 5px 0;
-  font-size: 15px;
+  font-size: 14px;
   color: #2a2a2e;
   display: flex;
   word-break: break-all;
@@ -43,7 +43,6 @@ a p {
   padding-left: 21px;
 }
 .user--address {
-  width: 260px;
   display: flex;
   align-self: center;
   align-items: center;
@@ -51,7 +50,7 @@ a p {
 
 .qrcode--user {
   align-self: center;
-  width: 200px;
+  width: 140px;
 }
 
 .pepe--user {
@@ -79,15 +78,13 @@ a p {
 }
 
 .copy {
-  position: absolute;
+  height: 0;
   width: auto;
-  height: auto;
-  padding: 5px;
   font-size: 16px;
   background-color: rgba(87, 86, 86, 0.8);
-  bottom: 5;
   color: white;
   opacity: 0;
+  margin: 0;
 }
 
 .copy.done {
@@ -99,11 +96,35 @@ a p {
     opacity: 0;
   }
   50% {
+    margin-top: 10px;
+    height: 25px;
+    padding: 5px;
     opacity: 1;
   }
   100% {
+    height: 0;
+    padding: 0;
     opacity: 0;
   }
+}
+.main__user-page.ban--amount {
+  display: flex;
+  flex-direction: column;
+}
+.main__user--section.ban--amount {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pepe--user.qr--code {
+  height: 100px;
+}
+
+.qrcode--section {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 

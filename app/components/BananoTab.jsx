@@ -13,6 +13,7 @@ const BananoUser = ({ user, ...props }) => {
   const [activeBan, setActiveBan] = useState(false);
   const [entries, setEntries] = useState([{}]);
   const [qrBan, setQR] = useState("");
+  const [addressCopy, setCopy] = useState(false);
 
   chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
     console.log(tabs);
@@ -60,62 +61,80 @@ const BananoUser = ({ user, ...props }) => {
 
   return (
     <>
-      <section className="main__user-page">
-        <img src="../../images/icon128.png" className="pepe--user"></img>
-        <section className="main__user--section">
+      <section className={`main__user-page ${qrBan && `ban--amount`}`}>
+        {!qrBan ? (
+          <img
+            src="../../images/icon128.png"
+            className="pepe--user"
+            style={{ display: qrBan ? `none` : `block` }}
+          />
+        ) : (
+          <h1 className="qrcode--title">
+            Scan QR code with Kalium to send donation to send manually
+          </h1>
+        )}
+
+        <section className={`main__user--section ${qrBan && `ban--amount`}`}>
           {!qrBan ? (
             <>
               <h1>Donate BAN to the current website:</h1>
               <h2>{userpage ? userpage.title : null}</h2>
             </>
           ) : (
-            <h1 className="qrcode--title">
-              Scan QR code with Kalium to send donation
-            </h1>
+            <img
+              src="../../images/icon128.png"
+              className="pepe--user qr--code"
+            />
           )}
-          {qrBan ? <img src={qrBan} className="qrcode--user" /> : null}
+          {qrBan && <QrCode qrBan={qrBan} addressCopy={addressCopy} />}
           {entries.map((user, index) => {
-            if (qrBan) {
-              return <AddressUser address={user.address} />;
-            }
-            return (
-              <form key={index} onSubmit={(e) => sendBananas(e, user.address)}>
-                <section className="user__form-tip">
-                  <input
-                    className="styleOfInput"
-                    type="text"
-                    value={banValue}
-                    onChange={(e) =>
-                      e.target.value > 0
-                        ? setBanValue(e.target.value)
-                        : setBanValue("")
-                    }
-                    placeholder={`Enter donation amount`}
-                  />
-                  <button type="submit">Create QR code</button>
-                </section>
-              </form>
-            );
+            if (!qrBan)
+              return (
+                <form
+                  key={index}
+                  onSubmit={(e) => sendBananas(e, user.address)}
+                >
+                  <section className="user__form-tip">
+                    <input
+                      className="styleOfInput"
+                      type="text"
+                      value={banValue}
+                      onChange={(e) =>
+                        e.target.value > 0
+                          ? setBanValue(e.target.value)
+                          : setBanValue("")
+                      }
+                      placeholder={`Enter donation amount`}
+                    />
+                    <button type="submit">Create QR code</button>
+                  </section>
+                </form>
+              );
           })}
         </section>
+        {qrBan && (
+          <AddressUser
+            address={entries[0].address}
+            setCopy={setCopy}
+            wasCopied={addressCopy}
+          />
+        )}
       </section>
     </>
   );
 };
 export default BananoUser;
 
-const AddressUser = ({ address }) => {
-  const [addressCopy, setCopy] = useState(false);
+const AddressUser = ({ address, setCopy, wasCopied }) => {
   return (
     <>
-      <p className={`copy ${addressCopy && `done`}`}>{`Ban Address copied`}</p>
       <div className="user--address">
         <a
           href={`https://creeper.banano.cc/explorer/account/${address}/history`}
         >
           <p>{address}</p>
         </a>
-        <CopyToClipboard text={address} onCopy={() => setCopy(!addressCopy)}>
+        <CopyToClipboard text={address} onCopy={() => setCopy(!wasCopied)}>
           <img
             src="../../images/copy-clip.png"
             style={{ width: "25px", height: "25px", cursor: "pointer" }}
@@ -123,5 +142,20 @@ const AddressUser = ({ address }) => {
         </CopyToClipboard>
       </div>
     </>
+  );
+};
+
+const QrCode = ({ qrBan, addressCopy }) => {
+  return (
+    <section class="qrcode--section">
+      <img src={qrBan} className="qrcode--user" />
+      {addressCopy ? (
+        <p
+          className={`copy ${addressCopy && `done`}`}
+        >{`Ban Address copied`}</p>
+      ) : (
+        ``
+      )}
+    </section>
   );
 };
