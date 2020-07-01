@@ -16,18 +16,13 @@
   },
   "browser_action": {
     "default_popup": "extension/index.html",
-    "default_icon": {
-      "16": "images/icon16.png",
-      "32": "images/icon32.png",
-      "48": "images/icon64.png",
-      "128": "images/icon128_inactive.png"
-    }
+    "default_icon": "images/icon128_inactive.png"
   },
   "icons": {
-      "16": "images/icon16.png",
-      "32": "images/icon32.png",
-      "48": "images/icon64.png",
-      "128": "images/icon128.png"
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon64.png",
+    "128": "images/icon128.png"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "manifest_version": 2,
