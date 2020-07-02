@@ -6,7 +6,7 @@
 
 Read more about [Banano Donate](XXX).
 
-![Banano Donate](XXX "Nano Donate in action")
+![Banano Donate](XXX "Banano Donate in action")
 
 ### License
 
