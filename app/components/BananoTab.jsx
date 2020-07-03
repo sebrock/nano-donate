@@ -70,7 +70,8 @@ const BananoUser = ({ user, ...props }) => {
           />
         ) : (
           <h1 className="qrcode--title">
-            Scan QR code with Kalium to send donation to send manually
+            Scan QR code with Kalium to send donation or copy address to send
+            manually from wallet!
           </h1>
         )}
 
@@ -86,7 +87,7 @@ const BananoUser = ({ user, ...props }) => {
               className="pepe--user qr--code"
             />
           )}
-          {qrBan && <QrCode qrBan={qrBan} addressCopy={addressCopy} />}
+          {qrBan && <QrCodeArea qrBan={qrBan} addressCopy={addressCopy} />}
           {entries.map((user, index) => {
             if (!qrBan)
               return (
@@ -99,11 +100,13 @@ const BananoUser = ({ user, ...props }) => {
                       className="styleOfInput"
                       type="text"
                       value={banValue}
-                      onChange={(e) =>
-                        e.target.value > 0
-                          ? setBanValue(e.target.value)
-                          : setBanValue("")
-                      }
+                      onChange={(e) => {
+                        let data =
+                          e.target.value >= 0
+                            ? e.target.value.replace(",", ".")
+                            : "";
+                        setBanValue(data);
+                      }}
                       placeholder={`Enter donation amount`}
                     />
                     <button type="submit">Create QR code</button>
@@ -146,9 +149,9 @@ const AddressUser = ({ address, setCopy, wasCopied }) => {
   );
 };
 
-const QrCode = ({ qrBan, addressCopy }) => {
+const QrCodeArea = ({ qrBan, addressCopy }) => {
   return (
-    <section class="qrcode--section">
+    <section className="qrcode--section">
       <img src={qrBan} className="qrcode--user" />
       {addressCopy ? (
         <p

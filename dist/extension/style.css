@@ -38,10 +38,13 @@ a p {
   display: flex;
   word-break: break-all;
   padding-top: 10px;
+  padding-right: 10px;
 }
+
 .main__user--section .qrcode--title {
   padding-left: 21px;
 }
+
 .user--address {
   display: flex;
   align-self: center;
@@ -74,7 +77,7 @@ a p {
   margin: 5px 0;
   font-size: 18px;
   font-weight: normal;
-  color: #2A2A2E;
+  color: #2a2a2e;
 }
 
 .copy {
