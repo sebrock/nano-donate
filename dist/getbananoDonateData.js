@@ -22,15 +22,12 @@ Array.from(document.getElementsByTagName("banano-donate")).map(function (
 });
 // Search for 'nano' meta tag in document
 Array.from(document.getElementsByTagName("meta")).filter(function (metaTag) {
-  if (
-    metaTag.getAttribute("name") === "nano" ||
-    metaTag.getAttribute("name") === "banano"
-  ) {
-    let nanoAddress = metaTag.getAttribute("content");
-    if (/^(ban_)[13][13-9a-km-uw-z]{59}$/.test(nanoAddress)) {
+  if (metaTag.getAttribute("name") === "banano") {
+    let bananoAddress = metaTag.getAttribute("content");
+    if (/^(ban_)[13][13-9a-km-uw-z]{59}$/.test(bananoAddress)) {
       bananoDonateEntries.push({
         metaTag: true,
-        address: nanoAddress,
+        address: bananoAddress,
         addressOwner: "This web page",
       });
     }
