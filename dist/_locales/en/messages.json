@@ -3,6 +3,6 @@
     "message": "Hello friends"
   },
   "err_notRegist": {
-    "message": "Sorry, this website is not registered to receive BananoDonate donations"
+    "message": "Sorry, this website is not yet enabled to receive BananoDonate donations. If you are the owner of this web page please follow this link to learn how to enable donations: <a href="https://github.com/sebrock/banano-donate/tree/banano-dev#how-can-i-receive-donations-through-bananodonate" target="_blank">link</a>"
   }
 }
