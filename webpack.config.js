@@ -100,10 +100,10 @@ module.exports = (env, argv) => {
   }
   //configuration just for production end
   if (argv.mode === "production") {
-    config.optimization.minimize = [
-      new TerserJSPlugin({}),
-      new OptimizeCSSAssetsPlugin({}),
-    ];
+    config.optimization = {
+      minimize: true,
+      minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    };
   }
 
   return config;
