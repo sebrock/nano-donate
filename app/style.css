@@ -129,3 +129,14 @@ a p {
   flex-direction: column;
   justify-content: center;
 }
+
+.fake__textarea {
+  background: white;
+  margin-top: 15px;
+  height: 100px;
+  font-size: 15px;
+  padding: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: monospace;
+}
