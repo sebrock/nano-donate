@@ -1,47 +1,47 @@
 {
     "msg_ThxInst": {
-        "message": "Thank you for installing BananoDonate!"
+        "message": "Vielen Dank, dass du BananoDonate installiert hast!"
     },
     "msg_DonCurrPage": {
-        "message": "Donate to the current website"
+        "message": "Dieser Website BAN spenden"
     },
     "msg_EnterTipAmount": {
-        "message": "Enter donation amount"
+        "message": "Gib den Spendenbetrag ein"
     },
     "btn_CreateQR": {
-        "message": "Create QR code"
+        "message": "Erstelle QR-Code"
     },
-    "err_NotRegist": {
-        "message": "Sorry, this website is not yet enabled to receive BananoDonate donations. If you are the owner of this web page please follow this link to learn how to enable donations:"
+    "message": {
+        "Sorry, this website is not yet enabled to receive BananoDonate donations. If you are the owner of this web page please follow this link to learn how to enable donations:": "Tut uns leid, aber diese Website kann noch keine Spenden durch BananoDonate empfangen. Wenn Du der Betreiber dieser Seite bist, kannst du unter dem folgenden link erfahren, wie das funktioniert."
     },
     "btn_Accept": {
-        "message": "Accept"
+        "message": "Akzeptieren"
     },
     "extDescription": {
-        "message": "BananoDonate is the easiest way to make Banano currency donations to participating websites."
+        "message": "BananoDonate ist der einfachste Weg, Banano-Währungen an teilnehmende Websites zu spenden."
     },
     "txt_DescLong": {
-        "message": "BananoDonate is the easiest way to make Banano currency donations to participating websites.\nIf you would like to know more about the BANANO cryptocurrency, please visit www.banano.cc\nThis is a BANANO community project. Made by Banano Jungle Monkeys for Banano Jungle Monkeys.\n\nCredits\nOur sincere thanks go to everyone in the BANANO community who contributed and supported in the making of this. BAN fam - best fam! 💛\n\nTranslation and Proofreading:\nAhmedDhaif93 for Arabic\nGoose for Chinese\nATH for Dutch\nLiberty_Seed and iazid for French\nPramono for Bahasa Indonesia\nLore and macaleon for Italian\nAfrica by Toto for Japanese\nmina_hanem for Farsi\nnknown for Portuguese\nMidNightSonne for Brazilian Portuguese\nYaroslavaWise and Nomina for Russian\nCristalla for Spanish\n\nGraphic Design support:\nSnappadoodle\n\nKeywords:\nbanano donation crypto cryptocurrency 19 23 42"
+        "message": "BananoDonate ist der einfachste Weg, Banano-Kyptowährung an teilnehmende Websites zu spenden.\nWenn du mehr über die BANANANO-Kryptowährung erfahren möchten, besuche bitte www.banano.cc.\nDies ist ein Projekt der BANANO-Community. Hergestellt von den Banano Dschungel Affen für die Banano Dschungel Affen.\n\nDanksagungen\nUnser aufrichtiger Dank geht an alle in der BANANO-Community, die dazu beigetragen und unterstützt haben. BANANO fam - beste fam! 💛\n\nÜbersetzung und Korrekturlesen:\nAhmedDhaif93 für Arabisch\nGans für Chinesisch\nATH für Niederländisch\nLiberty_Seed und iazid für Französisch\nPramono für Bahasa Indonesia\nLore und Makaleon für Italienisch\nAfrika von Toto für Japanisch\nmina_hanem für Farsi\nnbekannt für Portugiesisch\nMidNightSonne für brasilianisches Portugiesisch\nYaroslavaWise und Nomina für Russisch\nCristalla für Spanisch\n\nUnterstützung im Grafikdesign:\nSnappadoodle\n\nSchlagworte:\nbanano donation crypto cryptocurrency spenden krypto kryptowährung 19 23 42\n"
     },
     "msg_Disclaimer": {
-        "message": "While reasonable effort has been made to ensure BananoDonate works securely please make sure to double-check all outgoing amounts from your wallet when making a donation. Test with a tiny donation amount first if you want peace of mind. The authors of this extension are not liable for any loss or damage arising directly or indirectly through use of this extension."
+        "message": "Obwohl angemessene Anstrengungen unternommen wurden, um sicherzustellen, dass BananoDonate sicher funktioniert, stelle bitte sicher, dass bei einer Spende alle abgehenden Beträge aus deinem Wallet doppelt überprüft werden. Teste zuerst mit einem kleinen Spendenbetrag, wenn du dich vergewissern möchtest. Die Autoren dieser Erweiterung haften nicht für Verluste oder Schäden, die direkt oder indirekt durch die Verwendung dieser Erweiterung entstehen."
     },
     "msg_NotRegist_NotOwner_1": {
-        "message": "If you are not the owner but still want to donate Banano try sending a kind email along with this"
+        "message": "Wenn du nicht der Betreiber bist, aber trotzdem Banano spenden möchtest, versuche eine freundliche E-Mail zusammen mit diesem"
     },
     "msg_NotRegist_NotOwner_2": {
-        "message": "link"
+        "message": "Link"
     },
     "msg_NotRegist_NotOwner_3": {
-        "message": "to the website's owner through their contact page. You could use the following email template as a starting point:"
+        "message": "an den Betreiber der Website über dessen Kontaktseite zu schicken. Du könntest die folgende E-Mail-Vorlage als Ausgangspunkt verwenden:"
     },
     "msg_NotRegist_NotOwner_4": {
-        "message": "Hi [SITE_OWNER],\n\nI love your website and was hoping to donate some Banano digital currency to you. However I noticed your website is not enabled for BananoDonate. It's very easy to get enabled and you can learn how to do so at the following link (no sign-up required):"
+        "message": "Hallo [WEBSEITEN_BETREIBER],\n\nIch mag Deine Website und hatte gehofft, dir etwas Banano-Kryptowährung spenden zu können. Mir ist jedoch aufgefallen, dass deine Website noch nicht für BananoDonate aktiviert ist. Es ist sehr einfach, sich freischalten zu lassen, und du kannst unter dem folgenden Link erfahren, wie du dies tun kannst (keine Anmeldung erforderlich):"
     },
     "msg_NotRegist_NotOwner_5": {
-        "message": "Thanks!\n[YOUR_NAME]"
+        "message": "Vielen Dank!\n[DEIN_NAME]"
     },
     "msg_ClickHere": {
-        "message": "Click here"
+        "message": "Hier klicken"
     }
 }
