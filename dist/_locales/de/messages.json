@@ -11,8 +11,8 @@
     "btn_CreateQR": {
         "message": "Erstelle QR-Code"
     },
-    "message": {
-        "Sorry, this website is not yet enabled to receive BananoDonate donations. If you are the owner of this web page please follow this link to learn how to enable donations:": "Tut uns leid, aber diese Website kann noch keine Spenden durch BananoDonate empfangen. Wenn Du der Betreiber dieser Seite bist, kannst du unter dem folgenden link erfahren, wie das funktioniert."
+    "err_NotRegist": {
+        "message": "Tut uns leid, aber diese Website kann noch keine Spenden durch BananoDonate empfangen. Wenn Du der Betreiber dieser Seite bist, kannst du unter dem folgenden link erfahren, wie das funktioniert."
     },
     "btn_Accept": {
         "message": "Akzeptieren"
@@ -27,10 +27,10 @@
         "message": "Obwohl angemessene Anstrengungen unternommen wurden, um sicherzustellen, dass BananoDonate sicher funktioniert, stelle bitte sicher, dass bei einer Spende alle abgehenden Beträge aus deinem Wallet doppelt überprüft werden. Teste zuerst mit einem kleinen Spendenbetrag, wenn du dich vergewissern möchtest. Die Autoren dieser Erweiterung haften nicht für Verluste oder Schäden, die direkt oder indirekt durch die Verwendung dieser Erweiterung entstehen."
     },
     "msg_NotRegist_NotOwner_1": {
-        "message": "Wenn du nicht der Betreiber bist, aber trotzdem Banano spenden möchtest, versuche eine freundliche E-Mail zusammen mit diesem"
+        "message": "Wenn du nicht der Betreiber bist, aber trotzdem Banano spenden möchtest, versuche eine freundliche E-Mail zusammen mit diesem "
     },
     "msg_NotRegist_NotOwner_2": {
-        "message": "Link"
+        "message": "Link "
     },
     "msg_NotRegist_NotOwner_3": {
         "message": "an den Betreiber der Website über dessen Kontaktseite zu schicken. Du könntest die folgende E-Mail-Vorlage als Ausgangspunkt verwenden:"

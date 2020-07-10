@@ -22,7 +22,7 @@ const NotFoundUser = () => {
       {chrome.i18n.getMessage("msg_NotRegist_NotOwner_3")}
       <br />
       <div className="fake__textarea">
-        ${chrome.i18n.getMessage("msg_NotRegist_NotOwner_4")}
+        {chrome.i18n.getMessage("msg_NotRegist_NotOwner_4")}
         <a
           href="https://github.com/sebrock/banano-donate/tree/banano-dev#how-can-i-receive-donations-through-bananodonate"
           target="_blank"
@@ -30,7 +30,7 @@ const NotFoundUser = () => {
           {chrome.i18n.getMessage("msg_ClickHere")}
         </a>
         <br />
-        <br />${chrome.i18n.getMessage("msg_NotRegist_NotOwner_5")}
+        <br />{chrome.i18n.getMessage("msg_NotRegist_NotOwner_5")}
       </div>
     </div>
   );
