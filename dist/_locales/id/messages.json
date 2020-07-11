@@ -1,47 +1,47 @@
 {
     "msg_ThxInst": {
-        "message": "Thank you for installing BananoDonate!"
+        "message": "Terima kasih telah menginstall BananoDonate!"
     },
     "msg_DonCurrPage": {
-        "message": "Donate to the current website"
+        "message": "Donasi ke situs ini"
     },
     "msg_EnterTipAmount": {
-        "message": "Enter donation amount"
+        "message": "Masukkan jumlah donasi"
     },
     "btn_CreateQR": {
-        "message": "Create QR code"
+        "message": "Buat kode QR"
     },
     "err_NotRegist": {
-        "message": "Sorry, this website is not yet enabled to receive BananoDonate donations. If you are the owner of this web page please follow this link to learn how to enable donations:"
+        "message": "Maaf, situs ini tidak mengaktifkan untuk menerima donasi BananoDonate. Jika anda adalah pemilik website ini, mohon ikuti link berikut untuk mempelajari cara mengaktifkan donasi."
     },
     "btn_Accept": {
-        "message": "Accept"
+        "message": "Terima"
     },
     "extDescription": {
-        "message": "BananoDonate is the easiest way to make Banano currency donations to participating websites."
+        "message": "BananoDonate adalah langkah mudah untuk memberikan donasi menggunakan Banano kepada situs yang berpartisipasi."
     },
     "txt_DescLong": {
-        "message": "BananoDonate is the easiest way to make Banano currency donations to participating websites.\nIf you would like to know more about the BANANO cryptocurrency, please visit www.banano.cc\nThis is a BANANO community project. Made by Banano Jungle Monkeys for Banano Jungle Monkeys.\n\nCredits\nOur sincere thanks go to everyone in the BANANO community who contributed and supported in the making of this. BAN fam - best fam! 💛\n\nTranslation and Proofreading:\nAhmedDhaif93 for Arabic\nGoose for Chinese\nATH for Dutch\nLiberty_Seed and iazid for French\nPramono for Bahasa Indonesia\nLore and macaleon for Italian\nAfrica by Toto for Japanese\nmina_hanem for Farsi\nnknown for Portuguese\nMidNightSonne for Brazilian Portuguese\nYaroslavaWise and Nomina for Russian\nCristalla for Spanish\n\nGraphic Design support:\nSnappadoodle\n\nKeywords:\nbanano donation crypto cryptocurrency 19 23 42"
+        "message": "BananoDonate adalah langkah mudah untuk memberikan donasi menggunakan Banano kepada situs yang berpartisipasi.\nJika Anda ingin tahu lebih banyak tentang cryptocurrency BANANO, silakan kunjungi www.banano.cc\nIni adalah proyek komunitas BANANO. Dibuat oleh Banano Jungle Monkeys untuk Banano Jungle Monkeys.\n\nKredit\nTerima kasih kami yang tulus kepada semua orang di komunitas BANANO yang berkontribusi dan mendukung dalam pembuatan ini. keluarga BAN - keluarga terbaik! 💛\n\nTerjemahan dan Proofreading:\nAhmedDhaif93 untuk Arabic\nGoose untuk Chinese\nATH untuk Dutch\nLiberty_Seed and iazid untuk French\nPramono Utomo untuk Bahasa Indonesia\nMacaleon untuk Italian\nAfrica by Toto untuk Japanese\nmina_hanem untuk Farsi\nnknown untuk Portuguese\nMidNightSonne untuk Brazilian Portuguese\nYaroslavaWise untuk Russian\nCristalla untuk Spanish\nbbedward yang mengingatkan penghuni hutan untuk mendukung.\n\nDesain Grafis oleh:\nOops\n\nKata Kunci:\nbanano donation crypto cryptocurrency 19 23 42"
     },
     "msg_Disclaimer": {
-        "message": "While reasonable effort has been made to ensure BananoDonate works securely please make sure to double-check all outgoing amounts from your wallet when making a donation. Test with a tiny donation amount first if you want peace of mind. The authors of this extension are not liable for any loss or damage arising directly or indirectly through use of this extension."
+        "message": "Sementara upaya yang wajar telah dilakukan untuk memastikan BananoDonate bekerja dengan aman, pastikan untuk memeriksa ulang semua jumlah keluar dari dompet Anda saat memberikan sumbangan. Tes dengan jumlah donasi kecil terlebih dahulu jika Anda ingin ketenangan pikiran. Penulis ekstensi ini tidak bertanggung jawab atas kehilangan atau kerusakan yang timbul secara langsung atau tidak langsung melalui penggunaan ekstensi ini."
     },
     "msg_NotRegist_NotOwner_1": {
-        "message": "If you are not the owner but still want to donate Banano try sending a kind email along with this"
+        "message": "Jika Anda bukan pemiliknya tetapi masih ingin menyumbang Banano, cobalah mengirim email sejenis bersama ini"
     },
     "msg_NotRegist_NotOwner_2": {
         "message": "link"
     },
     "msg_NotRegist_NotOwner_3": {
-        "message": "to the website's owner through their contact page. You could use the following email template as a starting point:"
+        "message": "kepada pemilik situs web melalui halaman kontak mereka. Anda dapat menggunakan template email berikut sebagai titik awal:"
     },
     "msg_NotRegist_NotOwner_4": {
-        "message": "Hi [SITE_OWNER],\n\nI love your website and was hoping to donate some Banano digital currency to you. However I noticed your website is not enabled for BananoDonate. It's very easy to get enabled and you can learn how to do so at the following link (no sign-up required):"
+        "message": "Halo [SITE_OWNER],\n\nSaya suka situs web Anda dan berharap bisa menyumbangkan sejumlah mata uang digital Banano kepada Anda. Namun saya perhatikan situs web Anda tidak diaktifkan untuk BananoDonate. Sangat mudah untuk diaktifkan dan Anda dapat belajar melakukannya di tautan berikut (tidak perlu mendaftar):"
     },
     "msg_NotRegist_NotOwner_5": {
-        "message": "Thanks!\n[YOUR_NAME]"
+        "message": "Terima Kasih!\n[YOUR_NAME]"
     },
     "msg_ClickHere": {
-        "message": "Click here"
+        "message": "Klik Disini"
     }
 }
