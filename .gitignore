@@ -1,3 +1,6 @@
-working
-TODO.txt
+# Dependency directory
 node_modules/*
+
+# Build
+.publish
+yarn.lock
