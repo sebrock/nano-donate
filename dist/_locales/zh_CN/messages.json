@@ -1,47 +1,47 @@
 {
     "msg_ThxInst": {
-        "message": "Thank you for installing BananoDonate!"
+        "message": "感谢您安装BananoDonate!"
     },
     "msg_DonCurrPage": {
-        "message": "Donate to the current website"
+        "message": "捐赠给当前网站\n"
     },
     "msg_EnterTipAmount": {
-        "message": "Enter donation amount"
+        "message": "输入捐款金额\n"
     },
     "btn_CreateQR": {
-        "message": "Create QR code"
+        "message": "创建二维码\n"
     },
     "err_NotRegist": {
-        "message": "Sorry, this website is not yet enabled to receive BananoDonate donations. If you are the owner of this web page please follow this link to learn how to enable donations:"
+        "message": "抱歉，此网站尚未启用接收BananoDonate捐款。如果您是此网页的所有者，请点击此链接以了解如何启用捐款：\n"
     },
     "btn_Accept": {
-        "message": "Accept"
+        "message": "接收"
     },
     "extDescription": {
-        "message": "BananoDonate is the easiest way to make Banano currency donations to participating websites."
+        "message": "BananoDonate是向参与网站捐赠Banano货币最简单的方法。"
     },
     "txt_DescLong": {
-        "message": "BananoDonate is the easiest way to make Banano currency donations to participating websites.\nIf you would like to know more about the BANANO cryptocurrency, please visit www.banano.cc\nThis is a BANANO community project. Made by Banano Jungle Monkeys for Banano Jungle Monkeys.\n\nCredits\nOur sincere thanks go to everyone in the BANANO community who contributed and supported in the making of this. BAN fam - best fam! 💛\n\nTranslation and Proofreading:\nAhmedDhaif93 for Arabic\nGoose for Chinese\nATH for Dutch\nLiberty_Seed and iazid for French\nPramono for Bahasa Indonesia\nLore and macaleon for Italian\nAfrica by Toto for Japanese\nmina_hanem for Farsi\nnknown for Portuguese\nMidNightSonne for Brazilian Portuguese\nYaroslavaWise and Nomina for Russian\nCristalla for Spanish\n\nGraphic Design support:\nSnappadoodle\n\nKeywords:\nbanano donation crypto cryptocurrency 19 23 42"
+        "message": "BananoDonate是向参与网站捐赠Banano货币最简单的方法。 \n\n如果您想进一步了解BANANO加密货币，请游览www.banano.cc\n\n这是一个BANANO社区项目。由中华雨林的猴子做给中华雨林的猴子。\n\n鸣谢：\n诚挚感谢BANANO群组所有帮手的人。BANANO家庭是最好的家庭！\n\n翻译及编辑：\nAhmedDhaif93 - 阿拉伯文\nGoose - 中文\nATH - 菏兰语\nLiberty_Seed 和 iazid - 法文\nPramono - 印度尼西亚文\nmacaleon - 义大利文\nAfrica by Toto - 日语\nmina_hanem - 波斯语\nnknown - 葡萄牙语\nMidNightSonne - 巴西葡萄牙语\nYaroslavaWise - 俄文\nCristalla - 西班牙文\n\n设计帮手：\nSnappadoodle\n\n关键词：\nbanano donation crypto cryptocurrency 19 23 42"
     },
     "msg_Disclaimer": {
-        "message": "While reasonable effort has been made to ensure BananoDonate works securely please make sure to double-check all outgoing amounts from your wallet when making a donation. Test with a tiny donation amount first if you want peace of mind. The authors of this extension are not liable for any loss or damage arising directly or indirectly through use of this extension."
+        "message": "尽管已尽最大努力确保BananoDonate安全运行，但在进行捐赠时，请确保仔细检查钱包中的所有支出金额。如果您想放心，请先以少量捐赠进行测试。对于使用此扩展程序直接或间接引起的任何损失或损害，此扩展程序的作者不承担任何责任。\n"
     },
     "msg_NotRegist_NotOwner_1": {
-        "message": "If you are not the owner but still want to donate Banano try sending a kind email along with this"
+        "message": "如果您不是所有者，但仍想捐赠Banano，请尝试发送电子邮件与此一起\n\n\n"
     },
     "msg_NotRegist_NotOwner_2": {
-        "message": "link"
+        "message": "链接\n"
     },
     "msg_NotRegist_NotOwner_3": {
-        "message": "to the website's owner through their contact page. You could use the following email template as a starting point:"
+        "message": "通过网站的联系页面发送给网站的所有者。您可以使用以下电子邮件模板作为起点："
     },
     "msg_NotRegist_NotOwner_4": {
-        "message": "Hi [SITE_OWNER],\n\nI love your website and was hoping to donate some Banano digital currency to you. However I noticed your website is not enabled for BananoDonate. It's very easy to get enabled and you can learn how to do so at the following link (no sign-up required):"
+        "message": "您好！, [网站所有者]\n\n我喜欢您的网站，并希望向您捐赠一些Banano加密货币。但是我注意到您的网站未启用BananoDonate。启用它非常容易，您可以在以下链接中了解如何进行启用（无需注册）："
     },
     "msg_NotRegist_NotOwner_5": {
-        "message": "Thanks!\n[YOUR_NAME]"
+        "message": "谢谢！\n[你的名字]"
     },
     "msg_ClickHere": {
-        "message": "Click here"
+        "message": "点击这里\n"
     }
 }
