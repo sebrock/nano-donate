@@ -21,7 +21,7 @@
         "message": "BananoDonate é a forma mais fácil de fazer doações com a moeda Banano em websites."
     },
     "txt_DescLong": {
-        "message": "BananoDonate é a forma mais fácil de fazer doações com a moeda Banano em websites.\nSe você gostaria de saber mais sobre a criptomoeda BANANO, por favor visite www.banano.cc\nIsso é um projeto da comunidade BANANO. Feito pelos Macacos da Selva do Banano para Macacos da Selva do Banano.\n\nCréditos\nNós agredecemos a todos da comunidade BANANO que contribuíram e ajudaram a fazer isso. BAN fam = melhor fam! 💛\n\nTradução e revisão de texto:\nAhmedDhaif93 com o Árabe\nGoose com o Chinês\nATH com o Holandês\nLiberty_Seed and iazid com o Francês\nPramono com a Bahasa Indonesia\nLore and macaleon com o Italiano\nAfrica by Toto com Japanês\nmina_hanem com o Persa\nnknown com o Português\nMidNightSonne com o Português Brasileiro\nYaroslavaWise and Nomina com o Russo\nCristalla com o Espanhol\n\nApoio com Design Gráfico:\nSnappadoddle\n\nPalavra chaves:\nbanano doação cripto criptomoeda 19 23 42"
+        "message": "BananoDonate é a forma mais fácil de fazer doações com a moeda Banano em websites.\nSe você gostaria de saber mais sobre a criptomoeda BANANO, por favor visite www.banano.cc\nIsso é um projeto da comunidade BANANO. Feito pelos Macacos da Selva do Banano para Macacos da Selva do Banano.\n\nCréditos\nNós agredecemos a todos da comunidade BANANO que contribuíram e ajudaram a fazer isso. BAN fam = melhor fam! 💛\n\nTradução e revisão de texto:\n\nAhmedDhaif93 para árabe\nGoose para chinês\nKryptopia para dinamarquês\nATH para holandês\nLiberty_Seed e iazid para francês\nsebrock para alemão\nDemétrio para grego\nSkittish para Hindi\nPramono para Bahasa Indonesia\nmacaleon para italiano\nAfrica by Toto para japonês\nmina_hanem para persa\nnknown para português\npygo para norueguês\nMidNightSonne e andrecrjr ou português do Brasil\nYaroslavaWise para russo\nCristalla para espanhol\nTahadorukk Guns'NRoses para turco\nTu Hoang para Vietnamita\n\nApoio com Design Gráfico:\nSnappadoddle\n\nPalavra chaves:\nbanano doação cripto criptomoeda crypto cryptocurrency donation donate  19 23 42"
     },
     "msg_Disclaimer": {
         "message": "Esforços razoáveis tem sido criados para assegurar que o BananoDonate funcione de forma segura, mas por favor ainda sim verifique se o envio foi feito de forma correta da sua wallet quando fizer a doação. Se necessário teste com uma doação de pequena quantia. Os autores dessa extensão não são responsáveis por quaisquer perda ou dano diretamente ou indiretamente através do uso dessa extensão."
@@ -30,7 +30,7 @@
         "message": "Se você não é o dono mas ainda quer doar Banano, tente enviar um tipo de email seguindo esse"
     },
     "msg_NotRegist_NotOwner_2": {
-        "message": "link"
+        "link": "link"
     },
     "msg_NotRegist_NotOwner_3": {
         "message": "para o dono do website através da página de contato. Você poderia usar o seguinte template de email como ponto inicial:"
