@@ -1,47 +1,47 @@
 {
     "msg_ThxInst": {
-        "message": "Thank you for installing BananoDonate!"
+        "message": "¡Gracias por instalar BananoDonate!"
     },
     "msg_DonCurrPage": {
-        "message": "Donate to the current website"
+        "message": "Done al sitio web actual"
     },
     "msg_EnterTipAmount": {
-        "message": "Enter donation amount"
+        "message": "Ingrese el monto de la donación"
     },
     "btn_CreateQR": {
-        "message": "Create QR code"
+        "message": "Crear código QR"
     },
     "err_NotRegist": {
-        "message": "Sorry, this website is not yet enabled to receive BananoDonate donations. If you are the owner of this web page please follow this link to learn how to enable donations:"
+        "message": "Lo sentimos, este sitio web aún no está habilitado para recibir donaciones de BananoDonate. Si usted es el propietario de esta página web, siga este enlace para saber cómo habilitar las donaciones:"
     },
     "btn_Accept": {
-        "message": "Accept"
+        "message": "Aceptar"
     },
     "extDescription": {
-        "message": "BananoDonate is the easiest way to make Banano currency donations to participating websites."
+        "message": "BananoDonate es la forma más fácil de hacer donaciones con la moneda Banano a los sitios web participantes."
     },
     "txt_DescLong": {
-        "message": "BananoDonate is the easiest way to make Banano currency donations to participating websites.\nIf you would like to know more about the BANANO cryptocurrency, please visit www.banano.cc\nThis is a BANANO community project. Made by Banano Jungle Monkeys for Banano Jungle Monkeys.\n\nCredits\nOur sincere thanks go to everyone in the BANANO community who contributed and supported in the making of this. BAN fam - best fam! 💛\n\nTranslation and Proofreading:\nAhmedDhaif93 for Arabic\nGoose for Chinese\nATH for Dutch\nLiberty_Seed and iazid for French\nPramono for Bahasa Indonesia\nLore and macaleon for Italian\nAfrica by Toto for Japanese\nmina_hanem for Farsi\nnknown for Portuguese\nMidNightSonne for Brazilian Portuguese\nYaroslavaWise and Nomina for Russian\nCristalla for Spanish\n\nGraphic Design support:\nSnappadoodle\n\nKeywords:\nbanano donation crypto cryptocurrency 19 23 42"
+        "message": "BananoDonate es la forma más fácil de hacer donaciones con la moneda Banano a los sitios web participantes.\nSi desea obtener más información sobre la criptomoneda BANANO, visite www.banano.cc\nEste es un proyecto comunitario de BANANO. Hecho por Banano Jungle Monkeys para Banano Jungle Monkeys.\n\nCréditos\nNuestro sincero agradecimiento a todos en la comunidad BANANO que contribuyeron y apoyaron en la realización de esto. La familia BAN - La mejor familia! 💛\n\nTraducción y corrección de pruebas:\nAhmedDhaif93 para árabe\nGoose para chino\nKryptopia para danés\nATH para holandés\nLiberty_Seed e iazid para francés\nsebrock para alemán\nDemetrius para griego\nSkittish para hindi\nPramono para Bahasa Indonesia\nmacaleon para italiano\nAfrica byToto para japoneses\nmina_hanem para farsi\nnknown para portugués\npygo para noruego\nMidNightSonne y andrecrjr o portugués brasileño\nYaroslavaWise para ruso\nCristalla para español\nTahadorukk | Guns'NRoses para turco\nTu Hoang para vietnamitas\n\nSoporte en Diseño gráfico:\nSnappadoodle\n\nPalabras clave:\nbanano donation crypto cryptocurrency 19 23 42"
     },
     "msg_Disclaimer": {
-        "message": "While reasonable effort has been made to ensure BananoDonate works securely please make sure to double-check all outgoing amounts from your wallet when making a donation. Test with a tiny donation amount first if you want peace of mind. The authors of this extension are not liable for any loss or damage arising directly or indirectly through use of this extension."
+        "message": "Si bien se han realizado esfuerzos razonables para garantizar que BananoDonate funcione de manera segura, asegúrese de verificar dos veces todas las cantidades salientes de su billetera al hacer una donación. Pruebe con una pequeña cantidad de donación primero si desea tranquilidad. Los autores de esta extensión no son responsables de ninguna pérdida o daño que surja, directa o indirectamente a través del uso de esta extensión."
     },
     "msg_NotRegist_NotOwner_1": {
-        "message": "If you are not the owner but still want to donate Banano try sending a kind email along with this"
+        "message": "Si no eres el propietario pero aún quieres donar Banano, intenta enviar un correo electrónico amable junto con este"
     },
     "msg_NotRegist_NotOwner_2": {
-        "message": "link"
+        "message": "enlace"
     },
     "msg_NotRegist_NotOwner_3": {
-        "message": "to the website's owner through their contact page. You could use the following email template as a starting point:"
+        "message": "al propietario del sitio web a través de su página de contacto. Puede usar la siguiente plantilla de correo electrónico como punto de partida:"
     },
     "msg_NotRegist_NotOwner_4": {
-        "message": "Hi [SITE_OWNER],\n\nI love your website and was hoping to donate some Banano digital currency to you. However I noticed your website is not enabled for BananoDonate. It's very easy to get enabled and you can learn how to do so at the following link (no sign-up required):"
+        "message": "Hola [SITE_OWNER],\n\nMe encanta su sitio web y esperaba donarle una moneda digital llamada Banano. Sin embargo, noté que su sitio web no está habilitado para BananoDonate. Es muy fácil habilitarse y puede aprender cómo hacerlo en el siguiente enlace (no es necesario registrarse):"
     },
     "msg_NotRegist_NotOwner_5": {
-        "message": "Thanks!\n[YOUR_NAME]"
+        "message": "¡Gracias!\n[TU NOMBRE]"
     },
     "msg_ClickHere": {
-        "message": "Click here"
+        "message": "Haga clic aquí"
     }
 }
