@@ -61,6 +61,6 @@ Thanks!
 [YOUR_NAME]
 ```
 
-### License
+## License
 
-GNU GPLv3
+[GNU GPLv3](https://github.com/sebrock/banano-donate/blob/banano-dev/LICENSE)
