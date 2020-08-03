@@ -7,7 +7,7 @@
 
 # How do I use it to make a donation?
 Blabla until webstore install manually.. release..yadi yadi
-![Banano Donate](XXX "Banano Donate in action")
+
 
 # How can I receive donations through BananoDonate?
 If you are a website owner and want to enable your site to receive donations through BananoDonate there are just 3 sinple steps to be completed.
@@ -30,10 +30,11 @@ You can give your visitors a hint that your site is enabled for BananoDonate by 
 ```
 <!-- Start Banano-donate logo -->
 <a href="https://github.com/sebrock/banano-donate" target="_blank">
-<img border="0" src ="static/img/ban-don-logo.png" title="This site can receive donations via Banano-donate"  alt="This site can receive donations via Banano-donate" height="70"</img>
+<img border="0" src ="https://github.com/sebrock/banano-donate/blob/banano-dev/dist/images/ban-don-logo.png" title="This site can receive donations via Banano-donate"  alt="This site can receive donations via Banano-donate" height="70"</img>
 <!-- End Banano-donate logo -->
  ```
-
+The following image will be displayed:
+![](.dist/images/ban-don-logo.png)
 
 
 # How should I approach a website owner if I want them to enable them to receive donations via BananoDonate? 
