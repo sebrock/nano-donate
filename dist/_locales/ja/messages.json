@@ -1,47 +1,47 @@
 {
     "msg_ThxInst": {
-        "message": "Thank you for installing BananoDonate!"
+        "message": "「BananoDonate!」をインストールしてくれてありがとうございます。 「BananoDonate」は、参加ウェブサイトへの通貨寄付を行う最も簡単な方法です。"
     },
     "msg_DonCurrPage": {
-        "message": "Donate to the current website"
+        "message": "現在のウェブサイトに寄付する"
     },
     "msg_EnterTipAmount": {
-        "message": "Enter donation amount"
+        "message": "寄付金額の入力"
     },
     "btn_CreateQR": {
-        "message": "Create QR code"
+        "message": "QRコードの作成"
     },
     "err_NotRegist": {
-        "message": "Sorry, this website is not yet enabled to receive BananoDonate donations. If you are the owner of this web page please follow this link to learn how to enable donations:"
+        "message": "申し訳ございません。このWebサイトは、「BananoDonate」の寄付を受け取る登録がされていません。"
     },
     "btn_Accept": {
-        "message": "Accept"
+        "message": "同意する"
     },
     "extDescription": {
-        "message": "BananoDonate is the easiest way to make Banano currency donations to participating websites."
+        "message": "[プレースホルダ：短い説明（マニフェスト）] 132文字以内。"
     },
     "txt_DescLong": {
-        "message": "BananoDonate is the easiest way to make Banano currency donations to participating websites.\nIf you would like to know more about the BANANO cryptocurrency, please visit www.banano.cc\nThis is a BANANO community project. Made by Banano Jungle Monkeys for Banano Jungle Monkeys.\n\nCredits\nOur sincere thanks go to everyone in the BANANO community who contributed and supported in the making of this. BAN fam - best fam! 💛\n\nTranslation and Proofreading:\nAhmedDhaif93 for Arabic\nGoose for Chinese\nATH for Dutch\nLiberty_Seed and iazid for French\nPramono for Bahasa Indonesia\nLore and macaleon for Italian\nAfrica by Toto for Japanese\nmina_hanem for Farsi\nnknown for Portuguese\nMidNightSonne for Brazilian Portuguese\nYaroslavaWise and Nomina for Russian\nCristalla for Spanish\n\nGraphic Design support:\nSnappadoodle\n\nKeywords:\nbanano donation crypto cryptocurrency 19 23 42"
+        "message": "BananoDonateは、参加するWebサイトへのバナノ通貨の寄付を行う最も簡単な方法です。BANANO暗号通貨について詳しく知りたい場合は、www.banano.ccをご覧ください。これはBANANOコミュニティプロジェクトです。バナノジャングルサルが作ったバナノジャングルサルのためのもので。\n\nクレジット。\nこれに貢献し、支援してくれたBANANOコミュニティの皆さんに心から感謝します。BAN fam – ベストファム！💛\n\n翻訳と校正： \nAhmedDhaif93 （アラビア語） \n中国語用Goose\nオランダ語用のATH \nLiberty_Seedとiazid （フランス語）\nドイツ語のsebrock\nDemetrius (ギリシャ語)\nPramono （バハサインドネシア）\n  ヒンディー語 Skittish \nイタリア語版 macaleon \nAfrica by Totoさん、日本人向け \nファルシ語のmina_hanem \nポルトガル語にnknown \nポルトガル語（ブラジル）のMidNightSonne \nノルウェー語のpygo\nロシア語のYaroslavaWise \nスペイン語版Cristalla\nタハドルック| Guns'NRoses forトルコ語\nベトナム語のTu Hoang\n\nグラフィックデザインのサポート\nSnappadoodle\n\nキーワード\nバナノ寄贈暗号通貨19 23 42"
     },
     "msg_Disclaimer": {
-        "message": "While reasonable effort has been made to ensure BananoDonate works securely please make sure to double-check all outgoing amounts from your wallet when making a donation. Test with a tiny donation amount first if you want peace of mind. The authors of this extension are not liable for any loss or damage arising directly or indirectly through use of this extension."
+        "message": "BananoDonateが確実に機能するように合理的な取り組みが行われていますが、寄付を行う際には、財布から送られてくる金額を必ず再確認してください。安心が欲しいなら、まず小さな寄付金でテストしなさい。本延長の作成者は、この延長を使用して直接または間接的に生じた損失または損害に対して責任を負いません。"
     },
     "msg_NotRegist_NotOwner_1": {
-        "message": "If you are not the owner but still want to donate Banano try sending a kind email along with this"
+        "message": "もしあなたがオーナーではなく、まだ寄付したいのならばな野さんも、これと一緒に親切なメールを送ってみてください。"
     },
     "msg_NotRegist_NotOwner_2": {
-        "message": "link"
+        "message": "リンク"
     },
     "msg_NotRegist_NotOwner_3": {
-        "message": "to the website's owner through their contact page. You could use the following email template as a starting point:"
+        "message": "Webサイトの所有者に連絡先ページを通じて送信します。次の電子メールテンプレートを使用して、作業を開始できます。"
     },
     "msg_NotRegist_NotOwner_4": {
-        "message": "Hi [SITE_OWNER],\n\nI love your website and was hoping to donate some Banano digital currency to you. However I noticed your website is not enabled for BananoDonate. It's very easy to get enabled and you can learn how to do so at the following link (no sign-up required):"
+        "message": "こんいちわ [SITE_OWNER],\nあなたのウェブサイトが大好きで、バナノのデジタル通貨を寄付したいと思っていました。しかし、貴社のウェブサイトはBananoDonderに対して有効になっていないことに気が付きました。有効にするのは非常に簡単で、次のリンクでその方法を学ぶことができます（サインアップは不要):"
     },
     "msg_NotRegist_NotOwner_5": {
-        "message": "Thanks!\n[YOUR_NAME]"
+        "message": "ありがとう\n[YOUR_NAME]"
     },
     "msg_ClickHere": {
-        "message": "Click here"
+        "message": "ここをクリック"
     }
 }
