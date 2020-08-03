@@ -19,7 +19,7 @@ It need to be placed in the header section of your main landing page, typically 
 If you do not have a banano wallet yet, go [here](https://banano.how/where-does-it-come-from/) to find out how to get one.
 Please replace the contents of the _content_ property with the banano address you want to receive the donations.
 
-```
+```html
  <meta name="banano"  content="ban_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"/>
  ```
 ## 2. Let your users know that they can donate to your site using BananoDonate
@@ -27,16 +27,20 @@ The extension can be downloaded in the Coogle Chrome Webstore by following [this
 
 ## 3. Put the BananoDonate logo on your page (optional)
 You can give your visitors a hint that your site is enabled for BananoDonate by placing the following code on your page:
-```
+
+```html
 <!-- Start Banano-donate logo -->
 <a href="https://github.com/sebrock/banano-donate" target="_blank">
-<img border="0" src ="https://github.com/sebrock/banano-donate/blob/banano-dev/dist/images/ban-don-logo.png" title="This site can receive donations via Banano-donate"  alt="This site can receive donations via Banano-donate" height="70"</img>
+<img border="0" src ="https://github.com/sebrock/banano-donate/blob/banano-dev/dist/images/ban-don-logo.png" 
+     title="This site can receive donations via Banano-donate"  alt="This site can receive donations via Banano-donate" 
+     height="70"</img>
 <!-- End Banano-donate logo -->
  ```
 The following image will be displayed:
-![](.dist/images/ban-don-logo.png)
 
+![](./dist/images/ban-don-logo.png)
 
+You can change the size by editing `height` or adding a `width` property 
 # How should I approach a website owner if I want them to enable them to receive donations via BananoDonate? 
 
 If you are not the owner but still want to donate Banano try sending a kind email along with this <a href="https://github.com/sebrock/banano-donate/tree/banano-dev#how-can-i-receive-donations-through-bananodonate" target="_blank">link</a> to the website's owner through their contact page. You could use the following email template as a starting point:
