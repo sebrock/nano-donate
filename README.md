@@ -10,7 +10,31 @@ Blabla until webstore install manually.. release..yadi yadi
 ![Banano Donate](XXX "Banano Donate in action")
 
 # How can I receive donations through BananoDonate?
-blabla meta tag ban address yadi yadi
+If you are a website owner and want to enable your site to receive donations through BananoDonate there are just 3 sinple steps to be completed.
+This may be best done by your website administrator unless you are managing your website yourself and have a basic understanding of HTML.
+## 1. Insert HTML meta tag into you main page´s header
+The HTML meta tag below lets your users´ BananoDonate extension know where donations will be sent.
+It need to be placed in the header section of your main landing page, typically `index.html`.
+
+If you do not have a banano wallet yet, go [here](https://banano.how/where-does-it-come-from/) to find out how to get one.
+Please replace the contents of the _content_ property with the banano address you want to receive the donations.
+
+```
+ <meta name="banano"  content="ban_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"/>
+ ```
+## 2. Let your users know that they can donate to your site using BananoDonate
+The extension can be downloaded in the Coogle Chrome Webstore by following [this link](TBD)
+
+## 3. Put the BananoDonate logo on your page (optional)
+You can give your visitors a hint that your site is enabled for BananoDonate by placing the following code on your page:
+```
+<!-- Start Banano-donate logo -->
+<a href="https://github.com/sebrock/banano-donate" target="_blank">
+<img border="0" src ="static/img/ban-don-logo.png" title="This site can receive donations via Banano-donate"  alt="This site can receive donations via Banano-donate" height="70"</img>
+<!-- End Banano-donate logo -->
+ ```
+
+
 
 # How should I approach a website owner if I want them to enable them to receive donations via BananoDonate? 
 
