@@ -1,0 +1,47 @@
+{
+    "msg_ThxInst": {
+        "message": "「BananoDonate!」をインストールしてくれてありがとうございます。 「BananoDonate」は、参加ウェブサイトへの通貨寄付を行う最も簡単な方法です。"
+    },
+    "msg_DonCurrPage": {
+        "message": "現在のウェブサイトに寄付する"
+    },
+    "msg_EnterTipAmount": {
+        "message": "寄付金額の入力"
+    },
+    "btn_CreateQR": {
+        "message": "QRコードの作成"
+    },
+    "err_NotRegist": {
+        "message": "申し訳ございません。このWebサイトは、「BananoDonate」の寄付を受け取る登録がされていません。"
+    },
+    "btn_Accept": {
+        "message": "同意する"
+    },
+    "extDescription": {
+        "message": "[プレースホルダ：短い説明（マニフェスト）] 132文字以内。"
+    },
+    "txt_DescLong": {
+        "message": "BananoDonateは、参加するWebサイトへのバナノ通貨の寄付を行う最も簡単な方法です。BANANO暗号通貨について詳しく知りたい場合は、www.banano.ccをご覧ください。これはBANANOコミュニティプロジェクトです。バナノジャングルサルが作ったバナノジャングルサルのためのもので。\n\nクレジット。\nこれに貢献し、支援してくれたBANANOコミュニティの皆さんに心から感謝します。BAN fam – ベストファム！💛\n\n翻訳と校正： \nAhmedDhaif93 （アラビア語） \n中国語用Goose\nオランダ語用のATH \nLiberty_Seedとiazid （フランス語）\nドイツ語のsebrock\nDemetrius (ギリシャ語)\nPramono （バハサインドネシア）\n  ヒンディー語 Skittish \nイタリア語版 macaleon \nAfrica by Totoさん、日本人向け \nファルシ語のmina_hanem \nポルトガル語にnknown \nポルトガル語（ブラジル）のMidNightSonne \nノルウェー語のpygo\nロシア語のYaroslavaWise \nスペイン語版Cristalla\nタハドルック| Guns'NRoses forトルコ語\nベトナム語のTu Hoang\n\nグラフィックデザインのサポート\nSnappadoodle\n\nキーワード\nバナノ寄贈暗号通貨19 23 42"
+    },
+    "msg_Disclaimer": {
+        "message": "BananoDonateが確実に機能するように合理的な取り組みが行われていますが、寄付を行う際には、財布から送られてくる金額を必ず再確認してください。安心が欲しいなら、まず小さな寄付金でテストしなさい。本延長の作成者は、この延長を使用して直接または間接的に生じた損失または損害に対して責任を負いません。"
+    },
+    "msg_NotRegist_NotOwner_1": {
+        "message": "もしあなたがオーナーではなく、まだ寄付したいのならばな野さんも、これと一緒に親切なメールを送ってみてください。"
+    },
+    "msg_NotRegist_NotOwner_2": {
+        "message": "リンク"
+    },
+    "msg_NotRegist_NotOwner_3": {
+        "message": "Webサイトの所有者に連絡先ページを通じて送信します。次の電子メールテンプレートを使用して、作業を開始できます。"
+    },
+    "msg_NotRegist_NotOwner_4": {
+        "message": "こんいちわ [SITE_OWNER],\nあなたのウェブサイトが大好きで、バナノのデジタル通貨を寄付したいと思っていました。しかし、貴社のウェブサイトはBananoDonderに対して有効になっていないことに気が付きました。有効にするのは非常に簡単で、次のリンクでその方法を学ぶことができます（サインアップは不要):"
+    },
+    "msg_NotRegist_NotOwner_5": {
+        "message": "ありがとう\n[YOUR_NAME]"
+    },
+    "msg_ClickHere": {
+        "message": "ここをクリック"
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "banano-donate",
+  "version": "0.0.2",
+  "main": "index.js",
+  "repository": "git@github.com:sebrock/banano-donate.git",
+  "author": "André Carlos Jr. <andre-carlos@live.com>",
+  "homepage": "https://github.com/sebrock/banano-donate",
+  "contributors":{ 
+   "name" : "sebrock",
+  "email" : "sebrock@gmail.com",
+  "url" : "https://github.com/sebrock"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "banano-uri-generator": "^0.1.0",
+    "bignumber.js": "^9.0.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "qrcode": "^1.4.4",
+    "react": "^16.13.1",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "source-map-loader": "^1.0.0",
+    "terser-webpack-plugin": "^3.0.6",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0"
+  },
+  "scripts": {
+    "dev-build": "webpack --watch --mode=development --config webpack.config.js",
+    "prd-build": "webpack --watch --mode=production --config webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  }
+}

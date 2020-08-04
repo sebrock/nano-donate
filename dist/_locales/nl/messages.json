@@ -1,0 +1,47 @@
+{
+    "msg_ThxInst": {
+        "message": "Bedankt voor het installeren van BananoDonate!"
+    },
+    "msg_DonCurrPage": {
+        "message": "Doneer aan de huidige website"
+    },
+    "msg_EnterTipAmount": {
+        "message": "Voer het donatiebedrag in"
+    },
+    "btn_CreateQR": {
+        "message": "Creëer een QR-Code"
+    },
+    "err_NotRegist": {
+        "message": "Sorry, deze website is nog niet geactiveerd om donaties van BananoDonate te ontvangen. Als je de eigenaar van deze webpagina bent, volg dan deze link om te leren hoe je donaties kunt inschakelen:"
+    },
+    "btn_Accept": {
+        "message": "Accepteren"
+    },
+    "extDescription": {
+        "message": "BananoDonate is de gemakkelijkste manier om Banano te doneren aan deelnemende websites."
+    },
+    "txt_DescLong": {
+        "message": "BananoDonate is de gemakkelijkste manier om Banano te doneren aan deelnemende websites.\nAls je meer wilt weten over de BANANO cryptocurrency, bezoek dan www.banano.cc\nDit is een BANANO-community project. Gemaakt door Banano Jungle Monkeys voor Banano Jungle Monkeys.\n\nCredits:\nOnze oprechte dank gaat uit naar iedereen in de BANANO-gemeenschap die hieraan heeft bijgedragen en gesteund. BAN fam - beste fam! 💛\n\nVertaling en proeflezen:\n\nAhmedDhaif93 voor Arabisch\nGoose voor Chinees\nKryptopia voor Deens\nATH voor Nederlands\nLiberty_Seed en iazid voor Frans\nsebrock voor Duits\nDemetrius voor Grieks\nSkittish voor Hindi\nPramono voor Bahasa Indonesia\nmacaleon voor Italiaans\nAfrica van Toto voor Japans\nmina_hanem voor Farsi\nnKnown voor Portugees\npygo voor Noors\nMidNightSonne en andrecrjr of Braziliaans Portugees\nYaroslavaWise voor Russisch\nCristalla voor Spaans\nTahadorukk | Guns'NRoses voor Turks\nTu Hoang voor Vietnamees\n\nOndersteuning voor grafisch ontwerp:\nSnappadoodle\n\nKeywords:\nbananodonatie crypto cryptocurrency 19 23 42"
+    },
+    "msg_Disclaimer": {
+        "message": "Hoewel er redelijke inspanningen zijn geleverd om ervoor te zorgen dat BananoDonate veilig werkt, moet je alle uitgaande bedragen uit jouw portemonnee dubbel controleren wanneer je een donatie doet. Test eerst met een klein donatiebedrag als je gemoedsrust wilt. De auteurs van deze extensie zijn niet aansprakelijk voor verlies of schade die direct of indirect voortvloeit uit het gebruik van deze extensie."
+    },
+    "msg_NotRegist_NotOwner_1": {
+        "message": "Als je niet de eigenaar bent maar toch Banano wilt doneren, stuur dan een vriendelijke e-mail"
+    },
+    "msg_NotRegist_NotOwner_2": {
+        "message": "link"
+    },
+    "msg_NotRegist_NotOwner_3": {
+        "message": "aan de eigenaar van de website via hun contactpagina. Je kunt het volgende e-mailsjabloon als uitgangspunt gebruiken:"
+    },
+    "msg_NotRegist_NotOwner_4": {
+        "message": "Hallo [SITE_OWNER],\n\nIk ben dol op je website en hoopte wat digitale Banano crypto aan je te kunnen doneren. Ik merkte echter dat jouw website nog niet klaar is voor BananoDonate. Het is heel gemakkelijk om aangesloten te worden en je kunt leren hoe je dit kunt doen via de volgende link (aanmelden niet vereist):"
+    },
+    "msg_NotRegist_NotOwner_5": {
+        "message": "Bedankt!\n[YOUR_NAME]"
+    },
+    "msg_ClickHere": {
+        "message": "Klik hier"
+    }
+}

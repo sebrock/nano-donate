@@ -1,0 +1,47 @@
+{
+    "msg_ThxInst": {
+        "message": "Obrigado por instalar BananoDonate!"
+    },
+    "msg_DonCurrPage": {
+        "message": "Doe para o site atual"
+    },
+    "msg_EnterTipAmount": {
+        "message": "Digite a quantidade de Banano para doar"
+    },
+    "btn_CreateQR": {
+        "message": "Crie QR code!"
+    },
+    "err_NotRegist": {
+        "message": "Desculpe, este site não está registrado para receber doações do BananoDonate."
+    },
+    "btn_Accept": {
+        "message": "Aceitar"
+    },
+    "extDescription": {
+        "message": "BananoDonate é a forma mais fácil de fazer doações com a moeda Banano em websites."
+    },
+    "txt_DescLong": {
+        "message": "BananoDonate é a forma mais fácil de fazer doações com a moeda Banano em websites.\nSe você gostaria de saber mais sobre a criptomoeda BANANO, por favor visite www.banano.cc\nIsso é um projeto da comunidade BANANO. Feito pelos Macacos da Selva do Banano para Macacos da Selva do Banano.\n\nCréditos\nNós agredecemos a todos da comunidade BANANO que contribuíram e ajudaram a fazer isso. BAN fam = melhor fam! 💛\n\nTradução e revisão de texto:\n\nAhmedDhaif93 para árabe\nGoose para chinês\nKryptopia para dinamarquês\nATH para holandês\nLiberty_Seed e iazid para francês\nsebrock para alemão\nDemétrio para grego\nSkittish para Hindi\nPramono para Bahasa Indonesia\nmacaleon para italiano\nAfrica by Toto para japonês\nmina_hanem para persa\nnknown para português\npygo para norueguês\nMidNightSonne e andrecrjr ou português do Brasil\nYaroslavaWise para russo\nCristalla para espanhol\nTahadorukk Guns'NRoses para turco\nTu Hoang para Vietnamita\n\nApoio com Design Gráfico:\nSnappadoddle\n\nPalavra chaves:\nbanano doação cripto criptomoeda crypto cryptocurrency donation donate  19 23 42"
+    },
+    "msg_Disclaimer": {
+        "message": "Esforços razoáveis tem sido criados para assegurar que o BananoDonate funcione de forma segura, mas por favor ainda sim verifique se o envio foi feito de forma correta da sua wallet quando fizer a doação. Se necessário teste com uma doação de pequena quantia. Os autores dessa extensão não são responsáveis por quaisquer perda ou dano diretamente ou indiretamente através do uso dessa extensão."
+    },
+    "msg_NotRegist_NotOwner_1": {
+        "message": "Se você não é o dono mas ainda quer doar Banano, tente enviar um tipo de email seguindo esse"
+    },
+    "msg_NotRegist_NotOwner_2": {
+        "link": "link"
+    },
+    "msg_NotRegist_NotOwner_3": {
+        "message": "para o dono do website através da página de contato. Você poderia usar o seguinte template de email como ponto inicial:"
+    },
+    "msg_NotRegist_NotOwner_4": {
+        "message": "Oi [DONO_DO_SITE],\n\nEu amo seu website e espero doar algumas moedas digitais Banano para você. Porém eu verifiquei que em seu website não está ativado para o BananoDonate. É bem fácil ativar e você pode aprender como fazer, segue o link (nenhum cadastro obrigatorio):"
+    },
+    "msg_NotRegist_NotOwner_5": {
+        "message": "Obrigado!\n[SEU_NOME]"
+    },
+    "msg_ClickHere": {
+        "message": "Clique aqui"
+    }
+}

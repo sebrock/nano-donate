@@ -1,0 +1,47 @@
+{
+    "msg_ThxInst": {
+        "message": "¡Gracias por instalar BananoDonate!"
+    },
+    "msg_DonCurrPage": {
+        "message": "Done al sitio web actual"
+    },
+    "msg_EnterTipAmount": {
+        "message": "Ingrese el monto de la donación"
+    },
+    "btn_CreateQR": {
+        "message": "Crear código QR"
+    },
+    "err_NotRegist": {
+        "message": "Lo sentimos, este sitio web aún no está habilitado para recibir donaciones de BananoDonate. Si usted es el propietario de esta página web, siga este enlace para saber cómo habilitar las donaciones:"
+    },
+    "btn_Accept": {
+        "message": "Aceptar"
+    },
+    "extDescription": {
+        "message": "BananoDonate es la forma más fácil de hacer donaciones con la moneda Banano a los sitios web participantes."
+    },
+    "txt_DescLong": {
+        "message": "BananoDonate es la forma más fácil de hacer donaciones con la moneda Banano a los sitios web participantes.\nSi desea obtener más información sobre la criptomoneda BANANO, visite www.banano.cc\nEste es un proyecto comunitario de BANANO. Hecho por Banano Jungle Monkeys para Banano Jungle Monkeys.\n\nCréditos\nNuestro sincero agradecimiento a todos en la comunidad BANANO que contribuyeron y apoyaron en la realización de esto. La familia BAN - La mejor familia! 💛\n\nTraducción y corrección de pruebas:\nAhmedDhaif93 para árabe\nGoose para chino\nKryptopia para danés\nATH para holandés\nLiberty_Seed e iazid para francés\nsebrock para alemán\nDemetrius para griego\nSkittish para hindi\nPramono para Bahasa Indonesia\nmacaleon para italiano\nAfrica byToto para japoneses\nmina_hanem para farsi\nnknown para portugués\npygo para noruego\nMidNightSonne y andrecrjr o portugués brasileño\nYaroslavaWise para ruso\nCristalla para español\nTahadorukk | Guns'NRoses para turco\nTu Hoang para vietnamitas\n\nSoporte en Diseño gráfico:\nSnappadoodle\n\nPalabras clave:\nbanano donation crypto cryptocurrency 19 23 42"
+    },
+    "msg_Disclaimer": {
+        "message": "Si bien se han realizado esfuerzos razonables para garantizar que BananoDonate funcione de manera segura, asegúrese de verificar dos veces todas las cantidades salientes de su billetera al hacer una donación. Pruebe con una pequeña cantidad de donación primero si desea tranquilidad. Los autores de esta extensión no son responsables de ninguna pérdida o daño que surja, directa o indirectamente a través del uso de esta extensión."
+    },
+    "msg_NotRegist_NotOwner_1": {
+        "message": "Si no eres el propietario pero aún quieres donar Banano, intenta enviar un correo electrónico amable junto con este"
+    },
+    "msg_NotRegist_NotOwner_2": {
+        "message": "enlace"
+    },
+    "msg_NotRegist_NotOwner_3": {
+        "message": "al propietario del sitio web a través de su página de contacto. Puede usar la siguiente plantilla de correo electrónico como punto de partida:"
+    },
+    "msg_NotRegist_NotOwner_4": {
+        "message": "Hola [SITE_OWNER],\n\nMe encanta su sitio web y esperaba donarle una moneda digital llamada Banano. Sin embargo, noté que su sitio web no está habilitado para BananoDonate. Es muy fácil habilitarse y puede aprender cómo hacerlo en el siguiente enlace (no es necesario registrarse):"
+    },
+    "msg_NotRegist_NotOwner_5": {
+        "message": "¡Gracias!\n[TU NOMBRE]"
+    },
+    "msg_ClickHere": {
+        "message": "Haga clic aquí"
+    }
+}

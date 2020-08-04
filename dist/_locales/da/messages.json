@@ -1,0 +1,47 @@
+{
+    "msg_ThxInst": {
+        "message": "Tak fordi du indstallerede BananoDonate!"
+    },
+    "msg_DonCurrPage": {
+        "message": "Doner til den nuværende hjemmeside!"
+    },
+    "msg_EnterTipAmount": {
+        "message": "Indtast donationsbeløb"
+    },
+    "btn_CreateQR": {
+        "message": "Lav QR kode"
+    },
+    "err_NotRegist": {
+        "message": "Beklager, denne hjemmeside kan endnu ikke modtage BananoDonate donationer. Hvis du er ejeren af denne hjemmeside, så kan du følge dette link for at starte med at acceptere donationer."
+    },
+    "btn_Accept": {
+        "message": "Accepter"
+    },
+    "extDescription": {
+        "message": "BananoDonate er den nemmest måde at donere Banano til deltagende hjemmesider."
+    },
+    "txt_DescLong": {
+        "message": "BananoDonate er den nemmeste måde at give Banano donationer til deltagende websteder.\nHvis du gerne vil vide mere om BANANO kryptovalutaen, så kan du besøge www.banano.cc\nDette er et projekt skabt af BANANO communitiet.Skabt af Banano jungleaber til BANANO jungleaber..\n\nTak til\nVores oprigtige tak til alle i BANANO communitiet, der har bidraget og støttet oprettelsen af ​​denne udvidelse. BAN familien er den bedse familie!💛\n\nOversættelse og korrekturlæsning:\nAhmedDhaif93 til arabisk\nGoose til kinesisk\nATH til hollandsk\nKryptopia til dansk\nLiberty_Sed og iazid til fransk\nPramono til Bahasa indonesisk\nmacaleon til italiensk\nAfrika by Toto til japansk\nmina_hanem til farsi\nnknown til portugisisk\nMidNightSonne til brasiliansk portugisisk\nYaroslavaWise til russisk\nCristalla til spansk\nTahadorukk | Guns'NRoses til turkisk\nTu Hoang til vietnamesisk\n\nGrafisk design support:\nSnappadoodle\n\nnøgleord:\nbanano donation kryptovaluta krypto crypto cryptocurrency 19 23 42\n"
+    },
+    "msg_Disclaimer": {
+        "message": "Selvom der er gjort en stor indsats for at sikre, at BananoDonate fungerer sikkert, så skal du sørge for at tjekke alle udgående beløb fra din wallet, når du donerer. Test først med et lille donationsbeløb, hvis du ønsker ro i sindet. Forfatterne af denne udvidelse hæfter ikke for noget tab eller skade, der opstår direkte eller indirekte ved brug af denne udvidelse."
+    },
+    "msg_NotRegist_NotOwner_1": {
+        "message": "Hvis du ikke er ejeren af denne hjemmeside, men alligevel ønsker at donere Banano, så prøv at sende en venlig e-mail sammen med dette"
+    },
+    "msg_NotRegist_NotOwner_2": {
+        "message": "link"
+    },
+    "msg_NotRegist_NotOwner_3": {
+        "message": "til hjemmesidens ejer via deres kontaktside. Du kan bruge følgende e-mail-skabelon som udgangspunkt:"
+    },
+    "msg_NotRegist_NotOwner_4": {
+        "message": "Hej [Hjemmeside_Ejer]\n\nJeg elsker din hjemmeside og håbede på at jeg kunne donere noget Banano kryptovaluta til dig. Jeg har dog bemærket, at din hjemmeside ikke er aktiveret til BananoDonate. Det er meget let at blive aktiveret. Læs mere om hvordan du kan gøre dette på følgende link (kræver ingen tilmelding):"
+    },
+    "msg_NotRegist_NotOwner_5": {
+        "message": "Tak!"
+    },
+    "msg_ClickHere": {
+        "message": "Klik her"
+    }
+}

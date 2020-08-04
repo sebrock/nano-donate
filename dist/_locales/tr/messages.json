@@ -1,0 +1,47 @@
+{
+    "msg_ThxInst": {
+        "message": "BananoDonate'i indirdiğiniz için teşekkür ederiz!"
+    },
+    "msg_DonCurrPage": {
+        "message": "Mevcut websiteye bağış yapın"
+    },
+    "msg_EnterTipAmount": {
+        "message": "Bağış miktarı giriniz"
+    },
+    "btn_CreateQR": {
+        "message": "QR kod yarat"
+    },
+    "err_NotRegist": {
+        "message": "Maalesef, bu web sitesi henüz BananoDonate bağışlarına açık değil. Bu web sayfasının sahibiyseniz bağışların nasıl etkinleştirileceğini öğrenmek için lütfen bu bağlantıyı izleyin:"
+    },
+    "btn_Accept": {
+        "message": "Kabul et"
+    },
+    "extDescription": {
+        "message": "BananoDonate, katılımcı web sitelerine Banano para bağışı yapmanın en kolay yoludur."
+    },
+    "txt_DescLong": {
+        "message": "BananoDonate, katılımcı web sitelerine Banano para bağışı yapmanın en kolay yoludur.\nBANANO kripto para birimi hakkında daha fazla bilgi edinmek isterseniz, lütfen www.banano.cc adresini ziyaret edin.\nBu bir BANANO topluluk projesi. Banano Maymunları tarafından Banano Maymunları için yapılmıştır.\n\nSon olarak:\nBANANO topluluğunda bunun yapılmasına katkıda bulunan ve bunu destekleyen herkese içten teşekkürlerimizi sunarız. BAN fam - en iyi fam! 💛\n\nÇeviri ve Düzenleme:\nTürkçe İçin Tahadorukk | Guns'NRoses\nArapça için AhmedDhaif93\nAlmanca için sebrock\nÇince için Goose\nDanca için Kryptopia\nFlemenkçe için ATH\nYunanca için Demetrius\nHintçe için Skittish\nFransızca için Liberty_Seed ve İazid\nBahasa Endonezya için Pramono\nİtalyanca için Lore ve Macaleon\nNorveç için pygo\nJaponca için Africa by Toto\nFarsça için mina_hanem\nPortekizce için Nknown\nBrezilya Portekizcesi için MidNightSonne\nRusça için YaroslavaWise\nİspanyolca için Cristalla\nVietnamca için Tu Hoang\n\n\n\nGrafik Tasarım desteği:\nSnappadoodle\n\nAnahtar Kelimeler:\nbanano donation crypto cryptocurrency 19 23 42"
+    },
+    "msg_Disclaimer": {
+        "message": "BananoDonate'in güvenli bir şekilde çalışmasını sağlamak için azami gösterilmiş olmakla birlikte, bağış yaparken cüzdanınızdan tüm giden miktarları iki kez kontrol ettiğinizden emin olun. İçiniz rahat olsun istiyorsanız önce küçük bir bağış miktarı ile test edin. Bu uzantının yazarları, bu uzantının kullanılmasıyla doğrudan veya dolaylı olarak ortaya çıkan herhangi bir kayıp veya hasardan sorumlu değildir."
+    },
+    "msg_NotRegist_NotOwner_1": {
+        "message": "Kurucu değilseniz ancak yine de Banano bağışlamak istiyorsanız, bununla birlikte nazik bir e-posta göndermeyi deneyin"
+    },
+    "msg_NotRegist_NotOwner_2": {
+        "message": "Url"
+    },
+    "msg_NotRegist_NotOwner_3": {
+        "message": "İletişim sayfasından web sitesinin sahibine. Aşağıdaki e-posta şablonunu başlangıç  olarak kullanabilirsiniz:"
+    },
+    "msg_NotRegist_NotOwner_4": {
+        "message": "Merhaba [Site Sahibi],\n\nWeb sitenizi seviyorum ve size Banano dijital para birimi bağışlamayı umuyordum. Ancak web sitenizin BananoDonate için etkinleştirilmediğini fark ettim. Etkinleştirilmesi çok kolaydır ve bunu nasıl yapacağınızı aşağıdaki bağlantıdan öğrenebilirsiniz (kayıt gerekmez):"
+    },
+    "msg_NotRegist_NotOwner_5": {
+        "message": "Teşekkür ederiz!\n[ADINIZ]"
+    },
+    "msg_ClickHere": {
+        "message": "Buraya tıklayınız"
+    }
+}

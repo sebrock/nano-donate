@@ -1,0 +1,47 @@
+{
+    "msg_ThxInst": {
+        "message": "Takk for at du installerte BananoDonate!"
+    },
+    "msg_DonCurrPage": {
+        "message": "Doner til denne nettsiden"
+    },
+    "msg_EnterTipAmount": {
+        "message": "Fyll inn donasjonsbeløp"
+    },
+    "btn_CreateQR": {
+        "message": "Lag QR-kode"
+    },
+    "err_NotRegist": {
+        "message": "Beklager, denne nettsiden tar foreløpig ikke i mot donasjoner via BananoDonate. Hvis du eier denne nettsiden, vennligst følg denne lenken for å lære mer om hvordan du kan aktivere donasjoner:"
+    },
+    "btn_Accept": {
+        "message": "Aksepter"
+    },
+    "extDescription": {
+        "message": "BananoDonate er den enkleste måten å donere Banano på til deltakende nettsteder."
+    },
+    "txt_DescLong": {
+        "message": "BananoDonate er den enkleste måten å donere Banano på til deltakende nettsteder. Hvis du ønsker å lære mer om kryptovalutaen BANANO, vennligst besøk www.banano.cc\nDette er et BANANO community prosjekt - laget av Banano Jungle Monkeys, for Banano Jungle Monkeys.\n\nCredits\nStor takk til alle i BANANO-miljøet som har støttet dette prosjektet og bidratt til å gjøre det til virkelighet. BAN fam - best fam! 💛\n\nOversettelse og korrekturlesing:\nAhmedDhaif93 for arabisk\nGoose for kinesere\nKryptopia for dansk\nATH for nederlandsk\nLiberty_Sed og iazid for fransk\nsebrock for tysk\nDemetrius for gresk\nSkittisk for hindi\nPramono for Bahasa Indonesia\nmacaleon for italiensk\nAfrika by Toto for japansk\nmina_hanem for farsi\nnknown for portugisisk\npygo for norsk\nMidNightSonne og andrecrjr eller brasiliansk portugisisk\nYaroslavaWise for russisk\nCristalla for spansk\nTahadorukk | Guns'NRoses for tyrkisk\nTu Hoang for vietnamesisk\n\nGrafisk design-støtte:\nSnappadoodle\n\nNøkkelord:\nbanano donation donasjon crypto krypto cryptocurrency kryptovaluta donere 19 23 42"
+    },
+    "msg_Disclaimer": {
+        "message": "Selv om all nødvendig innsats er lagt inn for å forsikre om at BananoDonate fungerer så sikkert som mulig, kan det være lurt å dobbeltsjekke alle utgående beløp fra lommeboken din etter å ha gjennomført en donasjon. Test gjerne med et lavt donasjonsbeløp først om du ønsker å være på den sikre siden. Bruk foregår på eget ansvar, og skaperne av denne utvidelsen er ikke ansvarlige for eventuelle tap direkte eller indirekte knyttet til bruk av denne utvidelsen."
+    },
+    "msg_NotRegist_NotOwner_1": {
+        "message": "Dersom du ikke er eieren, men fremdeles ønsker å donere Banano, forsøk å sende en vennlig e-post sammen med dette"
+    },
+    "msg_NotRegist_NotOwner_2": {
+        "message": "lenke"
+    },
+    "msg_NotRegist_NotOwner_3": {
+        "message": "til nettsidens eier gjennom deres kontaktside. Du kan bruke følgende e-postmal som et utgangspunkt:"
+    },
+    "msg_NotRegist_NotOwner_4": {
+        "message": "Hei [EIER_AV_NETTSIDE],\n\nJeg liker nettsiden din veldig godt, og ville gjerne donert noen Banano (digital kryptovaluta) til deg, men det ser ikke ut til at du har aktivert BananoDonate på siden din. Det er veldig fort gjort å aktivere. Om du vil lære hvordan, har jeg lagt ved en lenke du kan kikke på for å komme i gang (du trenger ikke registrere deg):"
+    },
+    "msg_NotRegist_NotOwner_5": {
+        "message": "Tusen takk!\n\nMvh\n[DITT_NAVN]"
+    },
+    "msg_ClickHere": {
+        "message": "Trykk her"
+    }
+}
