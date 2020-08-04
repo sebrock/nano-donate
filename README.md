@@ -61,6 +61,10 @@ Thanks!
 [YOUR_NAME]
 ```
 
+# Sites enabled for Banano-Donate
+The following sites are enabled to receive donations through banano-donate:
+ - http://sebrock19.de - Banano Node and Node Monitor
+
 ## License
 
 [GNU GPLv3](https://github.com/sebrock/banano-donate/blob/banano-dev/LICENSE)
