@@ -1,14 +1,73 @@
-## Welcome to Banano Donate
+## Welcome to Banano Donate 0.0.2
+
+![Chrome Web Store](https://img.shields.io/chrome-web-store/users/pdnkikfbjfhikkpopfoaihhfbhaplpfc?label=chrome%20web%20store-users&style=plastic)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/rating/pdnkikfbjfhikkpopfoaihhfbhaplpfc?label=chrome%20web%20store-rating&style=plastic)
+![GitHub top language](https://img.shields.io/github/languages/top/sebrock/bananominer-watch-DEV_TEST?style=plastic)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/sebrock/bananominer-watch-DEV_TEST?style=plastic)
+![GitHub](https://img.shields.io/github/license/sebrock/bananominer-watch-DEV_TEST?style=plastic)
 
 ![](./dist/images/icon302.png "Logo")
 
 # What is it?
-**Banano Donate** is a browser extension for Google Chrome which allows you to easily make [Banano currency](https://www.banano.cc) donations to participating websites. The website owner specifies the Banano donation address beforehand so you can just concentrate on making the donation.
+**Banano Donate** is a **Chrome Browser Extension** (also works on all Chromium-based browsers, e.g. Brave browser) which allows you to easily make [Banano currency](https://www.banano.cc) donations to participating websites. The website owner specifies the Banano donation address beforehand so you can just concentrate on making the donation.
+It ~~is~~ will be available for download in all regions, and in 18 different languages covering 20 locales (locale identifiers in brackets):
+
+  -  Arabic (ar)
+  -  Danish (da)
+  -  German (de)
+  -  English - default (en)
+  -  Spanish (es)
+  -  Latin Amrican Spanish (es_419)
+  -  Persian (fa)
+  -  French (fr)
+  -  Greek (el)
+  -  Hindi (hi)
+  -  Bahasa Indonesia (id)
+  -  Italian (it)
+  -  Japanese (ja)
+  -  Dutch (nl)
+  -  Norwegian (no)
+  -  Brazilian Portuguese (pt_BR)
+  -  Portuguese (pt_PT)
+  -  Russian (ru)
+  -  Chinese - Mandarin (zh_CN)
+
+
+# How to install?
+~~The extension can be downloaded in the Google Chrome Webstore by following [this link](TBD)~~
+The extension has been submitted to the Google Chrome Webstore for review and publication.
+Until it is listed, you can manually install and test the latest build as explained in the following section.
+
+# Want to test the latest Development build?
+
+## Step 1 Download from github
+ Download the latest dev build from [tags in github](https://github.com/sebrock/banano-donate/releases/) (Download ZIP)
+
+## Step 2 Enable Developer Mode in Chrome
+Go to [chrome extensions](chrome://extensions) or for [Brave Browser](brave://extensions).
+Turn on the Developer Mode in the top left corner of the Extensions page in Chrome. 
+
+## Step 3 Unzip the downloaded release package 
+Unzip to a folder on your HDD. This folder will be the main folder you select in step 4.
+
+## Step 4 Load the extension into Chrome
+You can now select the extension. That's pretty easy, you go to **load unpackaged**,  select the folder you unzipped to and that´s it!
 
 
 # How do I use it to make a donation?
-Blabla until webstore install manually.. release..yadi yadi
 
+You will now see the BananoDonate icon in the upper right corner of Chrome, next to the address bar.
+If the site you are visiting **is already enabled to receive donations through BananoDonate**, the icon will be colored.
+Click on it and you will see the extension window pop up, asking you to enter the amount of BAN you´d like to donate.
+![](./dist/images/readme-md-1 "Input screen")
+Once you have entered the desired donation amount, click the "Create QR-Code" button.
+You will see a QR-code which you can scan using [Kalium](https://kalium.banano.cc/) to send your donation.
+Alternatively, you can copy the donation address and send your donation manually.
+This option will be further simplified in the next version.
+
+If you are visiting is **not yet enabled** to receive donations through BananoDonate, the icon will appear greyscaled.
+When you click it though, you will see instructions how to make that happen.
+(It links to this readme.)
 
 # How can I receive donations through BananoDonate?
 If you are a website owner and want to enable your site to receive donations through BananoDonate there are just 3 sinple steps to be completed.
@@ -41,7 +100,7 @@ The following image will be displayed:
 
 ![](./dist/images/ban-don-logo.png)
 
-You can change the size by editing `height` or adding a `width` property 
+You can change the size by editing `height` or adding a `width` property. 
 
 
 # How should I approach a website owner if I want them to enable them to receive donations via BananoDonate? 
