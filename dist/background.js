@@ -1,16 +1,4 @@
-//const dataUser = JSON.parse(localStorage.getItem("user"));
 bananoAddressCache = {};
-chrome.runtime.onInstalled.addListener(function () {
-  chrome.tabs.query({ currentWindow: true }, function (tabs) {
-    tabs.forEach(function (tab) {
-      console.log(tab);
-      if (!tab.url.startsWith("chrome://")) {
-        var code = "window.location.reload();";
-        chrome.tabs.executeScript(tab.id, { code: code });
-      }
-    });
-  });
-});
 
 chrome.runtime.onMessage.addListener(function (
   { bananoDonateEntries },
@@ -18,7 +6,11 @@ chrome.runtime.onMessage.addListener(function (
   sendResponse
 ) {
   // Only continue if URL doesn't start with "chrome://"
-  if (!tab.url.startsWith("chrome://") || !tab.url.startsWith("brave://")) {
+  console.log(tab.url);
+  if (
+    !tab.url.startsWith("chrome://") ||
+    !tab.url.startsWith("https://chrome.google.com")
+  ) {
     // Valid banano address/es found so add tab details to cache
     if (bananoDonateEntries.length) {
       bananoAddressCache[tab.id] = {
@@ -74,5 +66,24 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
         }
       }
     }
+  } else {
+    chrome.browserAction.disable();
   }
 });
+
+//onInstall script
+// chrome.runtime.onInstalled.addListener(function () {
+//   chrome.tabs.query({ currentWindow: true }, function (tabs) {
+//     tabs.forEach(function (tab) {
+//       console.log(tab);
+//       if (
+//         !tab.url.startsWith(
+//           "chrome://" || !tab.url.startsWith("https://chrome.google.com")
+//         )
+//       ) {
+//         var code = "window.location.reload();";
+//         chrome.tabs.executeScript(tab.id, { code: code });
+//       }
+//     });
+//   });
+// });
