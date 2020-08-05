@@ -15,12 +15,12 @@ It ~~is~~ will be available for download in all regions, and in 18 different lan
   -  Arabic (ar)
   -  Danish (da)
   -  German (de)
+  -  Greek (el)
   -  English - default (en)
   -  Spanish (es)
   -  Latin Amrican Spanish (es_419)
   -  Persian (fa)
   -  French (fr)
-  -  Greek (el)
   -  Hindi (hi)
   -  Bahasa Indonesia (id)
   -  Italian (it)
@@ -30,6 +30,7 @@ It ~~is~~ will be available for download in all regions, and in 18 different lan
   -  Brazilian Portuguese (pt_BR)
   -  Portuguese (pt_PT)
   -  Russian (ru)
+  -  Turkish (tr)
   -  Chinese - Mandarin (zh_CN)
 
 
@@ -127,3 +128,45 @@ The following sites are enabled to receive donations through banano-donate:
 ## License
 
 [GNU GPLv3](https://github.com/sebrock/banano-donate/blob/banano-dev/LICENSE)
+
+## Credits
+Our sincere thanks go to everyone in the BANANO community who contributed and supported in the making of this. BAN fam - best fam! 💛
+
+# Translation and Proofreading
+
+- AhmedDhaif93 for Arabic
+- Goose for Chinese
+- Kryptopia for Danish
+- ATH for Dutch
+- Liberty_Seed and iazid for French
+- sebrock for German
+- Skittish for Hindi
+- Pramono for Bahasa Indonesia
+- macaleon for Italian
+- Africa by Toto for Japanese
+- mina_hanem for Farsi
+- nknown for Portuguese
+- pygo for Norwegian
+- MidNightSonne and andrecrjr for Brazilian Portuguese
+- YaroslavaWise and Nomina for Russian
+- Cristalla for Spanish
+- Tahadorukk | Guns'NRoses for Turkish
+- Tu Hoang for Vietnamese
+- bbedward for reminding the jungle to support
+
+# Graphic Design support
+ - Snappadoodle
+
+*That's it guys. If you need to talk to us you can find us on Twitter:
+- [André´s twitter](https://twitter.com/andrecrjr)
+- [sebrock´s twitter](https://twitter.com/sebrock)
+- or both of us on the [Banano Discord Server](https://chat.banano.cc/)
+andrecrjr / sebrock|42 세브로크-마흔 둘
+
+# Contribution Guide
+Feel free to open Issues for bugs, feature requests, improvents to the code in [https://github.com/sebrock/banano-donate/](https://github.com/sebrock/banano-donate/).
+Please commit to a separate branch and create PRs towards the master.
+
+![https://github.com/sebrock/banano-donate/](./dist/images/BananoDonate_repository-card.png)
+
+Made with 🧡 and potassium 🍌 in Brazil, Germany, and the BANANO Jungle.
