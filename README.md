@@ -1,14 +1,79 @@
-## Welcome to Banano Donate
+## Welcome to BananoDonate 0.0.2
+
+<!--- ![Chrome Web Store](https://img.shields.io/chrome-web-store/users/pdnkikfbjfhikkpopfoaihhfbhaplpfc?label=chrome%20web%20store-users&style=plastic)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/rating/pdnkikfbjfhikkpopfoaihhfbhaplpfc?label=chrome%20web%20store-rating&style=plastic) --->
+![GitHub top language](https://img.shields.io/github/languages/top/sebrock/banano-donate?style=plastic)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/sebrock/banano-donate?style=plastic)
+![GitHub](https://img.shields.io/github/license/sebrock/banano-donate?style=plastic)
 
 ![](./dist/images/icon302.png "Logo")
 
 # What is it?
-**Banano Donate** is a browser extension for Google Chrome which allows you to easily make [Banano currency](https://www.banano.cc) donations to participating websites. The website owner specifies the Banano donation address beforehand so you can just concentrate on making the donation.
+**Banano Donate** is a **Chrome Browser Extension** (also works on all Chromium-based browsers, e.g. Brave browser) which allows you to easily make [Banano currency](https://www.banano.cc) donations to participating websites. The website owner specifies the Banano donation address beforehand so you can just concentrate on making the donation.
+It ~~is~~ will be available for download in all regions, and in 18 different languages covering 20 locales (locale identifiers in brackets):
+
+  -  Arabic (ar)
+  -  Danish (da)
+  -  German (de)
+  -  Greek (el)
+  -  English - default (en)
+  -  Spanish (es)
+  -  Latin Amrican Spanish (es_419)
+  -  Persian (fa)
+  -  French (fr)
+  -  Hindi (hi)
+  -  Bahasa Indonesia (id)
+  -  Italian (it)
+  -  Japanese (ja)
+  -  Dutch (nl)
+  -  Norwegian (no)
+  -  Brazilian Portuguese (pt_BR)
+  -  Portuguese (pt_PT)
+  -  Russian (ru)
+  -  Turkish (tr)
+  -  Chinese - Mandarin (zh_CN)
+
+
+# How to install?
+~~The extension can be downloaded in the Google Chrome Webstore by following [this link](TBD)~~
+The extension has been submitted to the Google Chrome Webstore for review and publication.
+Until it is listed, you can manually install and test the latest build as explained in the following section.
+
+# Want to test the latest Development build?
+
+## Step 1 Download from github
+ Download the latest dev build from [tags in github](https://github.com/sebrock/banano-donate/releases/) (Download ZIP)
+
+## Step 2 Enable Developer Mode in Chrome
+Go to [chrome extensions](chrome://extensions) or for [Brave Browser](brave://extensions).
+Turn on the Developer Mode in the top left corner of the Extensions page in Chrome. 
+
+## Step 3 Unzip the downloaded release package 
+Unzip to a folder on your HDD. This folder will be the main folder you select in step 4.
+
+## Step 4 Load the extension into Chrome
+You can now select the extension. That's pretty easy, you go to **load unpackaged**,  select the folder you unzipped to and that´s it!
 
 
 # How do I use it to make a donation?
-Blabla until webstore install manually.. release..yadi yadi
 
+You will now see the BananoDonate icon in the upper right corner of Chrome, next to the address bar.
+If the site you are visiting **is already enabled to receive donations through BananoDonate**, the icon will be colored.
+Click on it and you will see the extension window pop up, asking you to enter the amount of BAN you´d like to donate.
+
+![](./dist/images/readme-md-1.png "Input screen")
+
+Once you have entered the desired donation amount, click the "Create QR-Code" button.
+You will see a QR-code which you can scan using [Kalium](https://kalium.banano.cc/) to send your donation.
+
+![](./dist/images/readme-md-2.png "QR-Code screen")
+
+Alternatively, you can copy the donation address and send your donation manually.
+This option will be further simplified in the next version.
+
+If you are visiting is **not yet enabled** to receive donations through BananoDonate, the icon will appear greyscaled.
+When you click it though, you will see instructions how to make that happen.
+(It links to this readme.)
 
 # How can I receive donations through BananoDonate?
 If you are a website owner and want to enable your site to receive donations through BananoDonate there are just 3 sinple steps to be completed.
@@ -41,7 +106,7 @@ The following image will be displayed:
 
 ![](./dist/images/ban-don-logo.png)
 
-You can change the size by editing `height` or adding a `width` property 
+You can change the size by editing `height` or adding a `width` property. 
 
 
 # How should I approach a website owner if I want them to enable them to receive donations via BananoDonate? 
@@ -68,3 +133,45 @@ The following sites are enabled to receive donations through banano-donate:
 ## License
 
 [GNU GPLv3](https://github.com/sebrock/banano-donate/blob/banano-dev/LICENSE)
+
+## Credits
+Our sincere thanks go to everyone in the BANANO community who contributed and supported in the making of this. BAN fam - best fam! 💛
+
+# Translation and Proofreading
+
+- AhmedDhaif93 for Arabic
+- Goose for Chinese
+- Kryptopia for Danish
+- ATH for Dutch
+- Liberty_Seed and iazid for French
+- sebrock for German
+- Skittish for Hindi
+- Pramono for Bahasa Indonesia
+- macaleon for Italian
+- Africa by Toto for Japanese
+- mina_hanem for Farsi
+- nknown for Portuguese
+- pygo for Norwegian
+- MidNightSonne and andrecrjr for Brazilian Portuguese
+- YaroslavaWise and Nomina for Russian
+- Cristalla for Spanish
+- Tahadorukk | Guns'NRoses for Turkish
+- Tu Hoang for Vietnamese
+- bbedward for reminding the jungle to support
+
+# Graphic Design support
+ - Snappadoodle
+
+*That's it guys. If you need to talk to us you can find us on Twitter:
+- [André´s twitter](https://twitter.com/andrecrjr)
+- [sebrock´s twitter](https://twitter.com/sebrock)
+- or both of us on the [Banano Discord Server](https://chat.banano.cc/)
+andrecrjr / sebrock|42 세브로크-마흔 둘
+
+# Contribution Guide
+Feel free to open Issues for bugs, feature requests, improvents to the code in [https://github.com/sebrock/banano-donate/](https://github.com/sebrock/banano-donate/).
+Please commit to a separate branch and create PRs towards the master.
+
+![https://github.com/sebrock/banano-donate/](./dist/images/BananoDonate_repository-card.png)
+
+Made with 🧡 and potassium 🍌 in Brazil, Germany, and the BANANO Jungle.
