@@ -1,10 +1,10 @@
 ## Welcome to BananoDonate 0.0.2
 
-![Chrome Web Store](https://img.shields.io/chrome-web-store/users/pdnkikfbjfhikkpopfoaihhfbhaplpfc?label=chrome%20web%20store-users&style=plastic)
-![Chrome Web Store](https://img.shields.io/chrome-web-store/rating/pdnkikfbjfhikkpopfoaihhfbhaplpfc?label=chrome%20web%20store-rating&style=plastic)
-![GitHub top language](https://img.shields.io/github/languages/top/sebrock/bananominer-watch-DEV_TEST?style=plastic)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/sebrock/bananominer-watch-DEV_TEST?style=plastic)
-![GitHub](https://img.shields.io/github/license/sebrock/bananominer-watch-DEV_TEST?style=plastic)
+<!--- ![Chrome Web Store](https://img.shields.io/chrome-web-store/users/pdnkikfbjfhikkpopfoaihhfbhaplpfc?label=chrome%20web%20store-users&style=plastic)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/rating/pdnkikfbjfhikkpopfoaihhfbhaplpfc?label=chrome%20web%20store-rating&style=plastic) --->
+![GitHub top language](https://img.shields.io/github/languages/top/sebrock/banano-donate?style=plastic)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/sebrock/banano-donate?style=plastic)
+![GitHub](https://img.shields.io/github/license/sebrock/banano-donate?style=plastic)
 
 ![](./dist/images/icon302.png "Logo")
 
