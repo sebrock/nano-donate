@@ -5,10 +5,10 @@
   "repository": "git@github.com:sebrock/banano-donate.git",
   "author": "André Carlos Jr. <andre-carlos@live.com>",
   "homepage": "https://github.com/sebrock/banano-donate",
-  "contributors":{ 
-   "name" : "sebrock",
-  "email" : "sebrock@gmail.com",
-  "url" : "https://github.com/sebrock"
+  "contributors": {
+    "name": "sebrock",
+    "email": "sebrock@gmail.com",
+    "url": "https://github.com/sebrock"
   },
   "license": "MIT",
   "dependencies": {
@@ -35,7 +35,7 @@
   },
   "scripts": {
     "dev-build": "webpack --watch --mode=development --config webpack.config.js",
-    "prd-build": "webpack --watch --mode=production --config webpack.config.js"
+    "prd-build": "webpack --mode=production --config webpack.config.js"
   },
   "devDependencies": {
     "webpack-cli": "^3.3.12"

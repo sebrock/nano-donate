@@ -18,7 +18,7 @@ chrome.runtime.onMessage.addListener(function (
   sendResponse
 ) {
   // Only continue if URL doesn't start with "chrome://"
-  if (!tab.url.startsWith("chrome://")) {
+  if (!tab.url.startsWith("chrome://") || !tab.url.startsWith("brave://")) {
     // Valid banano address/es found so add tab details to cache
     if (bananoDonateEntries.length) {
       bananoAddressCache[tab.id] = {
@@ -47,21 +47,32 @@ chrome.runtime.onMessage.addListener(function (
 
 // When tab removed (closed)
 chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
-  const bananoAddressCache = localStorage.getItem("user");
-  const deletedJson = JSON.parse(bananoAddressCache);
-  delete deletedJson[tabId];
-  localStorage.setItem("user", JSON.stringify(deletedJson));
+  if (!tab.url.startsWith("chrome://")) {
+    const bananoAddressCache = localStorage.getItem("user");
+    if (bananoAddressCache) {
+      const deletedJson = JSON.parse(bananoAddressCache);
+      if (deletedJson[tabId] !== null) {
+        delete deletedJson[tabId];
+        localStorage.setItem("user", JSON.stringify(deletedJson));
+      }
+    }
+  }
 });
 
 // ====================================================
 //when the tab replace url
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
-  const bananoAddressCache = localStorage.getItem("user");
-  const updateTab = JSON.parse(bananoAddressCache);
-  if (updateTab[tabId]) {
-    if (updateTab[tabId].url.indexOf(tab.url) === -1) {
-      delete updateTab[tabId];
-      localStorage.setItem("user", JSON.stringify(updateTab));
+  if (!tab.url.startsWith("chrome://")) {
+    const bananoAddressCache = localStorage.getItem("user");
+    if (bananoAddressCache) {
+      const updateTab = JSON.parse(bananoAddressCache);
+      console.log(Object.entries(localStorage));
+      if (updateTab[tabId] === null) {
+        if (updateTab[tabId].url.indexOf(tab.url) === -1) {
+          delete updateTab[tabId];
+          localStorage.setItem("user", JSON.stringify(updateTab));
+        }
+      }
     }
   }
 });
