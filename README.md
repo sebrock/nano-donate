@@ -60,10 +60,14 @@ You can now select the extension. That's pretty easy, you go to **load unpackage
 You will now see the BananoDonate icon in the upper right corner of Chrome, next to the address bar.
 If the site you are visiting **is already enabled to receive donations through BananoDonate**, the icon will be colored.
 Click on it and you will see the extension window pop up, asking you to enter the amount of BAN you´d like to donate.
+
 ![](./dist/images/readme-md-1.png "Input screen")
+
 Once you have entered the desired donation amount, click the "Create QR-Code" button.
 You will see a QR-code which you can scan using [Kalium](https://kalium.banano.cc/) to send your donation.
+
 ![](./dist/images/readme-md-2.png "QR-Code screen")
+
 Alternatively, you can copy the donation address and send your donation manually.
 This option will be further simplified in the next version.
 
