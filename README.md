@@ -52,7 +52,7 @@ Turn on the Developer Mode in the top left corner of the Extensions page in Chro
 Unzip to a folder on your HDD. This folder will be the main folder you select in step 4.
 
 ## Step 4 Load the extension into Chrome
-You can now select the extension. That's pretty easy, you go to **load unpackaged**,  select the folder you unzipped to and that´s it!
+You can now select the extension. That's pretty easy, you go to **load unpackaged**,  select the **/dist/** folder from your unzipped release and that´s it!
 
 
 # How do I use it to make a donation?
