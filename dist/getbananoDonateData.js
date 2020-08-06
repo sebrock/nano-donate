@@ -24,6 +24,7 @@ Array.from(document.getElementsByTagName("banano-donate")).map(function (
 // Search for 'nano' meta tag in document
 Array.from(document.getElementsByTagName("meta")).filter(function (metaTag) {
   console.log(metaTag);
+
   if (metaTag.getAttribute("name") === "banano") {
     let bananoAddress = metaTag.getAttribute("content");
     if (/^(ban_)[13][13-9a-km-uw-z]{59}$/.test(bananoAddress)) {
@@ -35,5 +36,5 @@ Array.from(document.getElementsByTagName("meta")).filter(function (metaTag) {
     }
   }
 })[0];
-
+console.log(window.location.href);
 chrome.runtime.sendMessage({ bananoDonateEntries });
