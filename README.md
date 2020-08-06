@@ -5,6 +5,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/sebrock/banano-donate?style=plastic)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/sebrock/banano-donate?style=plastic)
 ![GitHub](https://img.shields.io/github/license/sebrock/banano-donate?style=plastic)
+[![Discord](https://img.shields.io/badge/discord-join%20chat-orange.svg)](https://chat.banano.cc/)
 
 ![](./dist/images/icon302.png "Logo")
 
