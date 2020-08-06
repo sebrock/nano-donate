@@ -17,12 +17,8 @@ export const App = () => {
     return (
       <>
         <section>
-          <h3>Thank you for installing BananoDonate!</h3>
-          <p>
-            <span>BananoDonate</span> is the easiest way to make Banano
-            currency donations to participating websites.
-			While reasonable effort has been made to ensure BananoDonate works securely please make sure to double-check all outgoing amounts from your wallet when making a donation. Test with a tiny donation amount first if you want peace of mind. The authors of this extension are not liable for any loss or damage arising directly or indirectly through use of this extension.
-          </p>
+          <h3>{chrome.i18n.getMessage("msg_ThxInst")}</h3>
+          <p>{chrome.i18n.getMessage("txt_DescLong")}</p>
 
           <button onClick={isAgree}>I agree</button>
         </section>
