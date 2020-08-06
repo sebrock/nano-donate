@@ -6,7 +6,6 @@ chrome.runtime.onMessage.addListener(function (
   sendResponse
 ) {
   // Only continue if URL doesn't start with "chrome://"
-  console.log(tab.url);
   if (
     !tab.url.startsWith("chrome://") ||
     !tab.url.startsWith("https://chrome.google.com")
@@ -54,11 +53,13 @@ chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
 // ====================================================
 //when the tab replace url
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
-  if (!tab.url.startsWith("chrome://")) {
+  if (
+    !tab.url.startsWith("chrome://") ||
+    !tab.url.startsWith("https://chrome.google.com")
+  ) {
     const bananoAddressCache = localStorage.getItem("user");
     if (bananoAddressCache) {
       const updateTab = JSON.parse(bananoAddressCache);
-      console.log(Object.entries(localStorage));
       if (updateTab[tabId] === null) {
         if (updateTab[tabId].url.indexOf(tab.url) === -1) {
           delete updateTab[tabId];
@@ -66,20 +67,16 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
         }
       }
     }
-  } else {
-    chrome.browserAction.disable();
   }
 });
 
-//onInstall script
+// //onInstall script
 // chrome.runtime.onInstalled.addListener(function () {
 //   chrome.tabs.query({ currentWindow: true }, function (tabs) {
 //     tabs.forEach(function (tab) {
-//       console.log(tab);
 //       if (
-//         !tab.url.startsWith(
-//           "chrome://" || !tab.url.startsWith("https://chrome.google.com")
-//         )
+//         !tab.url.startsWith("chrome://") ||
+//         !tab.url.startsWith("https://chrome")
 //       ) {
 //         var code = "window.location.reload();";
 //         chrome.tabs.executeScript(tab.id, { code: code });
