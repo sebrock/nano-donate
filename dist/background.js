@@ -38,14 +38,12 @@ chrome.runtime.onMessage.addListener(function (
 
 // When tab removed (closed)
 chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
-  if (!tab.url.startsWith("chrome://")) {
-    const bananoAddressCache = localStorage.getItem("user");
-    if (bananoAddressCache) {
-      const deletedJson = JSON.parse(bananoAddressCache);
-      if (deletedJson[tabId] !== null) {
-        delete deletedJson[tabId];
-        localStorage.setItem("user", JSON.stringify(deletedJson));
-      }
+  const bananoAddressCache = localStorage.getItem("user");
+  if (bananoAddressCache) {
+    const deletedJson = JSON.parse(bananoAddressCache);
+    if (deletedJson[tabId] !== null) {
+      delete deletedJson[tabId];
+      localStorage.setItem("user", JSON.stringify(deletedJson));
     }
   }
 });
