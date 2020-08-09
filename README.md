@@ -129,7 +129,7 @@ Thanks!
 
 # Sites enabled for Banano-Donate
 The following sites are enabled to receive donations through banano-donate:
- - http://sebrock19.de - Banano Node and Node Monitor
+ - [http://sebrock19.de](http://sebrock19.de) - Banano Node and Node Monitor
 
 ## License
 
