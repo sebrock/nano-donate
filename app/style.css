@@ -1,3 +1,8 @@
+/*variables*/
+:root {
+  --yellow-ban: rgb(255, 253, 32);
+}
+
 @font-face {
   font-family: "Banfont";
   src: url("./fonts/NeueHansKendrick-Regular.ttf") format("truetype");
@@ -6,11 +11,13 @@
   font-family: "BanAddress";
   src: url("./fonts/OverpassMono-Regular.ttf") format("truetype");
 }
+
 body {
   font-family: "Banfont";
   width: 450px;
   background-image: url(https://banano.cc/assets/bg-faucet.svg);
 }
+
 .main__user-page {
   display: flex;
 }
@@ -30,6 +37,10 @@ h2 {
   font-size: 16px;
   font-weight: normal;
   color: #2a2a2e;
+}
+a {
+  margin: 0;
+  padding: 0;
 }
 a p {
   margin: 5px 0;
@@ -78,6 +89,37 @@ a p {
   font-size: 18px;
   font-weight: normal;
   color: #2a2a2e;
+}
+
+button {
+  width: auto;
+  height: auto;
+  font-family: "Banfont";
+  border: 0;
+  transition: 500ms ease;
+  border-radius: 5px;
+  background: #3e923b;
+  color: white;
+}
+button:hover {
+  color: var(--yellow-ban);
+}
+
+.button--donate {
+  align-self: center;
+}
+
+.button--donate button {
+  text-decoration: none;
+  width: 200px;
+  height: 35px;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.button--donate__start {
+  margin-left: 5px;
+  padding: 5px;
 }
 
 .copy {
