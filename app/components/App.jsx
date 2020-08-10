@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import BananoUser from "./BananoTab";
+import React, { useState } from "react";
+import BananoTab from "./BananoTab";
 import NotFoundUser from "./NotFoundUser";
 import { refreshTab } from "./helper";
 import { MemoryRouter as Router, Switch, Route } from "react-router-dom";
@@ -31,8 +31,11 @@ export const App = () => {
       <Router>
         <Switch>
           <Route exact path="/">
-            <BananoUser user={JSON.parse(localStorage.getItem("user"))} />
+            <BananoTab user={JSON.parse(localStorage.getItem("user"))} />
           </Route>
+          {/* <Route exact path="/user">
+            <BananoUser user={JSON.parse(localStorage.getItem("user"))} />
+          </Route> */}
           <Route path="/not-found" component={NotFoundUser} />
         </Switch>
       </Router>

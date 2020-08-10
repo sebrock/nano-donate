@@ -5,7 +5,7 @@ import NotFoundUser from "./NotFoundUser";
 import { convertUnitBan } from "./helper";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-const BananoUser = ({ user, ...props }) => {
+const BananoTab = ({ user, ...props }) => {
   const [userpage, setUserPage] = useState({});
   const [banValue, setBanValue] = useState();
   const [activeBan, setActiveBan] = useState(false);
@@ -144,7 +144,7 @@ const BananoUser = ({ user, ...props }) => {
     </>
   );
 };
-export default BananoUser;
+export default BananoTab;
 
 const AddressUser = ({ address, setCopy, wasCopied }) => {
   return (

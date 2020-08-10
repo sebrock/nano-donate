@@ -126,9 +126,11 @@ button:hover {
 
 .button--donate__auto {
   width: 15%;
-  margin-left: 5px;
   font-size: 12px;
   padding: 5px;
+}
+.button--donate__auto:not(:first-child) {
+  margin-left: 5px;
 }
 
 .copy {
