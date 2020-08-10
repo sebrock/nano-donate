@@ -18,9 +18,9 @@ export const App = () => {
       <>
         <section>
           <h3>{chrome.i18n.getMessage("msg_ThxInst")}</h3>
-          <p>{chrome.i18n.getMessage("txt_DescLong")}</p>
+          <p>{chrome.i18n.getMessage("extDescription")}{chrome.i18n.getMessage("msg_Disclaimer")}</p>
 
-          <button onClick={isAgree}>I agree</button>
+          <button onClick={isAgree}>{chrome.i18n.getMessage("btn_Accept")}</button>
         </section>
       </>
     );

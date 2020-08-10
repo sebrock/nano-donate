@@ -66,23 +66,21 @@ const BananoTab = ({ user, ...props }) => {
             <h1 className="qrcode--title">
               You are about to donate {banValue} BAN to {userpage.title}
             </h1>
+            <h2>{userpage ? userpage.title : null}</h2>
             <a
               href={`https://vault.banano.cc/send?to=${entries[0].address}&amount=${banValue}`}
               target="_blank"
               className="button--donate"
             >
-              <button>Send via Banano Vault</button>
+              <button>Banano Vault</button>
             </a>
-            <h1 className="qrcode--title">
-              or scan QR code with Kalium to send donation.
-            </h1>
           </section>
         )}
 
         <section className={`main__user--section ${qrBan && `ban--amount`}`}>
           {!qrBan ? (
             <>
-              <h1>Donate BAN to the current website:</h1>
+              <h1>{chrome.i18n.getMessage("msg_DonCurrPage")}</h1>
               <h2>{userpage ? userpage.title : null}</h2>
             </>
           ) : (
@@ -112,14 +110,14 @@ const BananoTab = ({ user, ...props }) => {
                               : "";
                           setBanValue(data);
                         }}
-                        placeholder={`Enter donation amount`}
+                        placeholder={"EnterTipAmount-NOT-I18N"}
                       />
                       <button
                         type="submit"
                         className="button--donate__start"
                         disabled={banValue > 0 ? false : true}
                       >
-                        Create Donation
+                        {chrome.i18n.getMessage("msg_ClickHere")}
                       </button>
                     </section>
                   </form>
