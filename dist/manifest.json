@@ -11,8 +11,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://*/"],
-      "exclude_matches": ["*://chrome.google.com/***"],
+      "matches": ["https://*/*", "http://*/*"],
       "js": ["getbananoDonateData.js"],
       "run_at": "document_idle"
     }
