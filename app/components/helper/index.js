@@ -1,5 +1,4 @@
-import BigNumber from "bignumber.js";
-//import { banToRaw, rawToban } from "banano-unit-converter";
+import { banToRaw, rawToBan } from "banano-unit-converter";
 
 export const refreshTab = () => {
   chrome.tabs.getSelected(null, function (tab) {
@@ -8,8 +7,10 @@ export const refreshTab = () => {
   });
 };
 
-export const convertUnitBan = (value) => {
-  //multiply number by ten then multiply to 10**28
-  let data = Number(value * 10) * Math.pow(10, 29);
-  return BigNumber(data).toFixed();
+export const convertBanToRaw = (value) => {
+  return banToRaw(value);
+};
+
+export const convertRawToban = (value) => {
+  return rawToBan(value);
 };

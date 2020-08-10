@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getSendURI } from "banano-uri-generator";
 import QRCode from "qrcode";
 import NotFoundUser from "./NotFoundUser";
-import { convertUnitBan } from "./helper";
+import { convertBanToRaw } from "./helper";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const BananoTab = ({ user, ...props }) => {
@@ -36,7 +36,7 @@ const BananoTab = ({ user, ...props }) => {
     e.preventDefault();
 
     QRCode.toDataURL(
-      getSendURI(banAddress, convertUnitBan(banValue), `BananoDonate tip`),
+      getSendURI(banAddress, convertBanToRaw(banValue), `BananoDonate tip`),
       {
         type: "svg",
       },
@@ -64,7 +64,7 @@ const BananoTab = ({ user, ...props }) => {
         ) : (
           <section style={{ display: "flex", flexDirection: "column" }}>
             <h1 className="qrcode--title">
-              You have two ways to donate your Bananos:
+              You are about to donate {banValue} BAN to {userpage.title}
             </h1>
             <a
               href={`https://vault.banano.cc/send?to=${entries[0].address}&amount=${banValue}`}
