@@ -95,33 +95,41 @@ const BananoUser = ({ user, ...props }) => {
           {entries.map((user, index) => {
             if (!qrBan && index === 0)
               return (
-                <form
-                  key={index}
-                  onSubmit={(e) => sendBananas(e, user.address)}
-                >
-                  <section className="user__form-tip">
-                    <input
-                      className="styleOfInput"
-                      type="text"
-                      value={banValue}
-                      onChange={(e) => {
-                        let data =
-                          parseFloat(e.target.value) > 0
-                            ? e.target.value.replace(",", ".")
-                            : "";
-                        setBanValue(data);
-                      }}
-                      placeholder={`Enter donation amount`}
-                    />
-                    <button
-                      type="submit"
-                      className="button--donate__start"
-                      disabled={banValue > 0 ? false : true}
-                    >
-                      Create Donation
-                    </button>
-                  </section>
-                </form>
+                <>
+                  <form
+                    key={index}
+                    onSubmit={(e) => sendBananas(e, user.address)}
+                  >
+                    <section className="user__form-tip">
+                      <input
+                        className="styleOfInput"
+                        type="text"
+                        value={banValue}
+                        onChange={(e) => {
+                          let data =
+                            parseFloat(e.target.value) > 0
+                              ? e.target.value.replace(",", ".")
+                              : "";
+                          setBanValue(data);
+                        }}
+                        placeholder={`Enter donation amount`}
+                      />
+                      <button
+                        type="submit"
+                        className="button--donate__start"
+                        disabled={banValue > 0 ? false : true}
+                      >
+                        Create Donation
+                      </button>
+                    </section>
+                  </form>
+                  <div style={{ display: "flex", marginTop: "5px" }}>
+                    <DonateButton set={setBanValue} value={"19"} />
+                    <DonateButton set={setBanValue} value={"123"} />
+                    <DonateButton set={setBanValue} value={"1042"} />
+                    <DonateButton set={setBanValue} value={"1923"} />
+                  </div>
+                </>
               );
           })}
         </section>
@@ -173,3 +181,17 @@ const QrCodeArea = ({ qrBan, addressCopy }) => {
     </section>
   );
 };
+
+function DonateButton({ set, value }) {
+  return (
+    <button
+      className="button--donate__auto"
+      onClick={(e) => {
+        e.preventDefault();
+        set(value);
+      }}
+    >
+      {value} BAN
+    </button>
+  );
+}
