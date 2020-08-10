@@ -175,6 +175,7 @@ button:hover {
 .main__user--section.ban--amount {
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 15px;
 }
 
 .pepe--user.qr--code {

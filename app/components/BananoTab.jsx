@@ -66,7 +66,6 @@ const BananoTab = ({ user, ...props }) => {
             <h1 className="qrcode--title">
               You are about to donate {banValue} BAN to {userpage.title}
             </h1>
-            <h2>{userpage ? userpage.title : null}</h2>
             <a
               href={`https://vault.banano.cc/send?to=${entries[0].address}&amount=${banValue}`}
               target="_blank"
