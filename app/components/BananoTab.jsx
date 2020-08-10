@@ -64,25 +64,23 @@ const BananoUser = ({ user, ...props }) => {
         ) : (
           <section style={{ display: "flex", flexDirection: "column" }}>
             <h1 className="qrcode--title">
-              You have two ways to donate your Bananos:
+              {chrome.i18n.getMessage("msg_DonCurrPage")}
             </h1>
+			<h2>{userpage ? userpage.title : null}</h2>
             <a
               href={`https://vault.banano.cc/send?to=${entries[0].address}&amount=${banValue}`}
               target="_blank"
               className="button--donate"
             >
-              <button>Send via Banano Vault</button>
+              <button>Banano Vault</button>
             </a>
-            <h1 className="qrcode--title">
-              or scan QR code with Kalium to send donation.
-            </h1>
           </section>
         )}
 
         <section className={`main__user--section ${qrBan && `ban--amount`}`}>
           {!qrBan ? (
             <>
-              <h1>Donate BAN to the current website:</h1>
+              <h1>{chrome.i18n.getMessage("msg_DonCurrPage")}</h1>
               <h2>{userpage ? userpage.title : null}</h2>
             </>
           ) : (
@@ -105,21 +103,20 @@ const BananoUser = ({ user, ...props }) => {
                         className="styleOfInput"
                         type="text"
                         value={banValue}
-                        onChange={(e) => {
+                        onChange={(e) => { 
                           let data =
                             parseFloat(e.target.value) > 0
                               ? e.target.value.replace(",", ".")
                               : "";
                           setBanValue(data);
                         }}
-                        placeholder={`Enter donation amount`}
+                        placeholder={'EnterTipAmount-NOT-I18N'}
                       />
                       <button
                         type="submit"
                         className="button--donate__start"
                         disabled={banValue > 0 ? false : true}
-                      >
-                        Create Donation
+                      >{chrome.i18n.getMessage("msg_ClickHere")}       
                       </button>
                     </section>
                   </form>
