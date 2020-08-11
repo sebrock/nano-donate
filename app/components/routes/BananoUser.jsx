@@ -19,7 +19,11 @@ const BananoUser = (props) => {
     sendBananas(address, data.state.banAmount);
   }, [address]);
   const sendBananas = (banAddress, banAmount) => {
-    QRCode.toDataURL(
+    console.log(
+      getSendURI(banAddress, convertBanToRaw(banAmount), `BananoDonate tip`)
+    );
+
+    QRCode.toString(
       getSendURI(banAddress, convertBanToRaw(banAmount), `BananoDonate tip`),
       {
         type: "svg",
@@ -85,7 +89,10 @@ const AddressUser = ({ address, setCopy, wasCopied }) => {
 const QrCodeArea = ({ qrBan, addressCopy }) => {
   return (
     <section className="qrcode--section">
-      <img src={qrBan} className="qrcode--user" />
+      <img
+        src={`data:image/svg+xml;utf8,${encodeURIComponent(qrBan)}`}
+        width="100"
+      />
       {addressCopy ? (
         <p
           className={`copy ${addressCopy && `done`}`}
