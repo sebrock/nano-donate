@@ -44,9 +44,8 @@ const BananoTab = ({ user, ...props }) => {
   if (!activeBan) {
     return <NotFoundUser />;
   }
-  const setAmount = (index, amount, values = banAmount) => {
-    console.log(index);
-    const auxValues = { ...values };
+  const setAmount = (index, amount, oldValues = banAmount) => {
+    const auxValues = { ...oldValues };
     //de qualquer forma iremos inserir no state value, senão limpa o input do usuário.
     auxValues[index] = parseFloat(amount) || null;
     //seta o novo objeto
@@ -54,6 +53,7 @@ const BananoTab = ({ user, ...props }) => {
   };
 
   const changeAmount = (e) => {
+    e.preventDefault();
     setAmount(e.target.name, e.target.value);
   };
 

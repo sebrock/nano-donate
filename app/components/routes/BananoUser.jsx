@@ -10,7 +10,10 @@ const BananoUser = (props) => {
   const [addressCopy, setCopy] = useState(false);
   const data = useLocation();
   const [qrBan, setQR] = useState("");
-  const { address } = data.state.user.bananoDonateEntries[data.state.index];
+  const { banAmount } = data.state;
+  const { address, addressOwner } = data.state.user.bananoDonateEntries[
+    data.state.index
+  ];
 
   useEffect(() => {
     sendBananas(address, data.state.banAmount);
@@ -22,7 +25,6 @@ const BananoUser = (props) => {
         type: "svg",
       },
       function (error, value) {
-        console.log(value);
         if (value) {
           console.log(value);
           setQR(value);
@@ -31,32 +33,31 @@ const BananoUser = (props) => {
     );
   };
 
-  // return (
-  //   <>
-  //     <section style={{ display: "flex", flexDirection: "column" }}>
-  //       <h1 className="qrcode--title">
-  //         You are about to donate {data.banAmount} BAN to{" "}
-  //         {UserBan.userPage.title}
-  //       </h1>
-  //       <a
-  //         href={`https://vault.banano.cc/send?to=${UserBan.userPage.title}&amount=${banValue}`}
-  //         target="_blank"
-  //         className="button--donate"
-  //       >
-  //         <button>Banano Vault</button>
-  //       </a>
-  //     </section>
-  //     <section className={`main__user--section ban--amount`}>
-  //       <img src="../../images/icon128.png" className="pepe--user qr--code" />
-  //       <QrCodeArea qrBan={qrBan} addressCopy={addressCopy} />
-  //       <AddressUser
-  //         address={entries[0].address}
-  //         setCopy={setCopy}
-  //         wasCopied={addressCopy}
-  //       />
-  //     </section>
-  //   </>
-  // );
+  return (
+    <>
+      <section style={{ display: "flex", flexDirection: "column" }}>
+        <h1 className="qrcode--title">
+          You are about to donate {banAmount} BAN to {addressOwner}
+        </h1>
+        <a
+          href={`https://vault.banano.cc/send?to=${address}&amount=${banAmount}`}
+          target="_blank"
+          className="button--donate"
+        >
+          <button>Banano Vault</button>
+        </a>
+      </section>
+      <section className={`main__user--section ban--amount`}>
+        <img src="../../images/icon128.png" className="pepe--user qr--code" />
+        <QrCodeArea qrBan={qrBan} addressCopy={addressCopy} />
+      </section>
+      <AddressUser
+        address={address}
+        setCopy={setCopy}
+        wasCopied={addressCopy}
+      />
+    </>
+  );
 };
 export default BananoUser;
 
