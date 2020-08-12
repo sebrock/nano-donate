@@ -25,11 +25,12 @@ Array.from(document.getElementsByTagName("banano-donate")).map(function (
 Array.from(document.getElementsByTagName("meta")).filter(function (metaTag) {
   if (metaTag.getAttribute("name") === "banano") {
     let bananoAddress = metaTag.getAttribute("content");
+    let contentOwner = metaTag.getAttribute("content-creator") || null;
     if (/^(ban_)[13][13-9a-km-uw-z]{59}$/.test(bananoAddress)) {
       bananoDonateEntries.push({
         metaTag: true,
         address: bananoAddress,
-        addressOwner: "This web page",
+        addressOwner: contentOwner ? contentOwner : "This web page",
       });
     }
   }

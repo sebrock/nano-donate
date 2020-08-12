@@ -11,18 +11,13 @@ const BananoUser = (props) => {
   const data = useLocation();
   const [qrBan, setQR] = useState("");
   const { banAmount } = data.state;
-  const { address, addressOwner } = data.state.user.bananoDonateEntries[
-    data.state.index
-  ];
+  console.log(data);
+  const { address, addressOwner } = data.state.user;
 
   useEffect(() => {
     sendBananas(address, data.state.banAmount);
   }, [address]);
   const sendBananas = (banAddress, banAmount) => {
-    console.log(
-      getSendURI(banAddress, convertBanToRaw(banAmount), `BananoDonate tip`)
-    );
-
     QRCode.toString(
       getSendURI(banAddress, convertBanToRaw(banAmount), `BananoDonate tip`),
       {
@@ -91,7 +86,7 @@ const QrCodeArea = ({ qrBan, addressCopy }) => {
     <section className="qrcode--section">
       <img
         src={`data:image/svg+xml;utf8,${encodeURIComponent(qrBan)}`}
-        width="100"
+        width="150"
       />
       {addressCopy ? (
         <p

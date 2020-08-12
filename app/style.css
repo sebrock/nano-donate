@@ -84,7 +84,7 @@ a p {
 .user__form-tip {
   font-size: 14px;
   padding: 2px;
-  width: 490px;
+  width: auto;
   display: flex;
   height: auto;
 }
@@ -130,26 +130,28 @@ button:hover {
 }
 
 .button--donate__auto {
-  width: 15%;
   font-size: 12px;
   padding: 5px;
+  height: 25px;
 }
-.button--donate__auto:not(:first-child) {
+
+.button--donate__auto {
   margin-left: 5px;
 }
 
 .copy {
   height: 0;
   width: auto;
-  font-size: 16px;
+  font-size: 0.9em;
   background-color: rgba(87, 86, 86, 0.8);
   color: white;
   opacity: 0;
   margin: 0;
+  text-align: center;
 }
 
 .copy.done {
-  animation: blink 2s ease;
+  animation: blink 2.2s ease;
 }
 
 @keyframes blink {
@@ -158,8 +160,8 @@ button:hover {
   }
   50% {
     margin-top: 10px;
-    height: 25px;
-    padding: 5px;
+    height: auto;
+    padding: 3px;
     opacity: 1;
   }
   100% {

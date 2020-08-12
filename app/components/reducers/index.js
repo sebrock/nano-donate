@@ -4,7 +4,6 @@ export const initialState = {
   userPage: JSON.parse(localStorage.getItem("userTabPage")) || {
     bananoDonateEntries: [],
   },
-  qrBan: "",
 };
 
 export const UserReducer = (state, action) => {

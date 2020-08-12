@@ -3,8 +3,6 @@ import NotFoundUser from "../NotFoundUser";
 import { UserReducer, initialState } from "../reducers";
 import { useHistory } from "react-router";
 
-import QRCode from "qrcode";
-
 const BananoTab = ({ user, ...props }) => {
   const [userTabPage, setUserPage] = useState({});
   const [activeBan, setActiveBan] = useState(false);
@@ -45,11 +43,11 @@ const BananoTab = ({ user, ...props }) => {
     return <NotFoundUser />;
   }
   const setAmount = (index, amount, oldValues = banAmount) => {
-    const auxValues = { ...oldValues };
-    //de qualquer forma iremos inserir no state value, senão limpa o input do usuário.
-    auxValues[index] = parseFloat(amount) || null;
-    //seta o novo objeto
-    setBanAmount(auxValues);
+    const copiedValues = { ...oldValues };
+
+    copiedValues[index] = parseFloat(amount) || null;
+
+    setBanAmount(copiedValues);
   };
 
   const changeAmount = (e) => {
@@ -81,7 +79,7 @@ const BananoTab = ({ user, ...props }) => {
                       e.preventDefault();
                       history.push("/user", {
                         index: index,
-                        user: UserBan.userPage,
+                        user: UserBan.userPage.bananoDonateEntries[index],
                         banAmount: banAmount[`address-owner-${index}`],
                       });
                     }}
@@ -93,7 +91,9 @@ const BananoTab = ({ user, ...props }) => {
                         name={`address-owner-${index}`}
                         value={banAmount[`address-owner-${index}`]}
                         onChange={changeAmount}
-                        placeholder={"EnterTipAmount-NOT-I18N"}
+                        placeholder={chrome.i18n.getMessage(
+                          "msg_EnterTipAmount"
+                        )}
                       />
                       <button
                         type="submit"
