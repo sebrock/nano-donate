@@ -34,6 +34,6 @@ Array.from(document.getElementsByTagName("meta")).filter(function (metaTag) {
       });
     }
   }
-})[0];
+});
 
 chrome.runtime.sendMessage({ bananoDonateEntries });
