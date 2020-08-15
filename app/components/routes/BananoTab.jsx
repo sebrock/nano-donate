@@ -33,6 +33,7 @@ const BananoTab = ({ user, ...props }) => {
           tab.addressOwner === "This web page" &&
           (tab.addressOwner = userTabPage.title)
       );
+
       dispatchBanUser({ type: "ADD_USER_PAGE", payload: userTabPage });
     }
 

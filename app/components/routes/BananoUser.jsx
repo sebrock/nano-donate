@@ -9,10 +9,11 @@ import { useLocation } from "react-router-dom";
 
 const BananoUser = (props) => {
   const { banUser } = useContext(BanFamContext);
-  const { banAmount } = data.state;
   const { address, addressOwner } = banUser.userPage[0];
-  const [addressCopy, setCopy] = useState(false);
   const data = useLocation();
+  const { banAmount } = data.state;
+
+  const [addressCopy, setCopy] = useState(false);
   const [qrBan, setQR] = useState("");
 
   useEffect(() => {
