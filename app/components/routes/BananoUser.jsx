@@ -1,20 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import QRCode from "qrcode";
 import { getSendURI } from "banano-uri-generator";
 import { convertBanToRaw } from "../helper";
+import { BanFamContext } from "../context/BananoContext";
 
 import { useLocation } from "react-router-dom";
 
 const BananoUser = (props) => {
+  const { banUser } = useContext(BanFamContext);
+  const { banAmount } = data.state;
+  const { address, addressOwner } = banUser.userPage[0];
   const [addressCopy, setCopy] = useState(false);
   const data = useLocation();
   const [qrBan, setQR] = useState("");
-  const { banAmount } = data.state;
-  console.log(data);
-  const { address, addressOwner } = data.state.user;
 
   useEffect(() => {
+    console.log(banUser);
     sendBananas(address, data.state.banAmount);
   }, [address]);
   const sendBananas = (banAddress, banAmount) => {

@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, { useState, useEffect, useReducer, useContext } from "react";
 import NotFoundUser from "../NotFoundUser";
-import { UserReducer, initialState } from "../reducers";
 import { useHistory } from "react-router";
+import { BanFamContext } from "../context/BananoContext";
 
 const BananoTab = ({ user, ...props }) => {
+  const { banUser, dispatchBanUser } = useContext(BanFamContext);
   const [userTabPage, setUserPage] = useState({});
   const [activeBan, setActiveBan] = useState(false);
   const [banAmount, setBanAmount] = useState({});
-  const [UserBan, dispatchUser] = useReducer(UserReducer, initialState);
   const history = useHistory();
 
   chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
@@ -33,8 +33,7 @@ const BananoTab = ({ user, ...props }) => {
           tab.addressOwner === "This web page" &&
           (tab.addressOwner = userTabPage.title)
       );
-      console.log(userTabPage);
-      dispatchUser({ type: "ADD_USER_PAGE", payload: userTabPage });
+      dispatchBanUser({ type: "ADD_USER_PAGE", payload: userTabPage });
     }
 
     return () => {};
@@ -64,13 +63,13 @@ const BananoTab = ({ user, ...props }) => {
           <>
             <h1>{chrome.i18n.getMessage("msg_DonCurrPage")}</h1>
           </>
-          {UserBan.userPage &&
-            UserBan.userPage.bananoDonateEntries.map((user, index) => {
+          {banUser.userPage &&
+            banUser.userPage.bananoDonateEntries.map((user, index) => {
               return (
                 <>
                   <h2>
-                    {UserBan.userPage
-                      ? UserBan.userPage.bananoDonateEntries[index].addressOwner
+                    {banUser.userPage
+                      ? banUser.userPage.bananoDonateEntries[index].addressOwner
                       : null}
                   </h2>
 
@@ -78,9 +77,11 @@ const BananoTab = ({ user, ...props }) => {
                     key={index}
                     onSubmit={(e) => {
                       e.preventDefault();
+                      dispatchBanUser({
+                        type: "ACTIVE_USER",
+                        payload: index,
+                      });
                       history.push("/user", {
-                        index: index,
-                        user: UserBan.userPage.bananoDonateEntries[index],
                         banAmount: banAmount[`address-owner-${index}`],
                       });
                     }}
