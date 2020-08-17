@@ -78,7 +78,7 @@ const BananoTab = ({ user }) => {
           {banUser.userPage &&
             banUser.userPage.bananoDonateEntries.map((user, index) => {
               return (
-                <div key={index}>
+                <div className="main__user--creator" key={index}>
                   <h2>
                     {banUser.userPage
                       ? banUser.userPage.bananoDonateEntries[index].addressOwner

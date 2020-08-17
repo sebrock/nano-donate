@@ -189,6 +189,10 @@ button:hover {
   margin-top: 15px;
 }
 
+.main__user--creator:not(:first-of-type) {
+  margin-top: 5px;
+}
+
 .pepe--user.qr--code {
   height: 100px;
 }
