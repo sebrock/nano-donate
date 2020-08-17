@@ -1,10 +1,6 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import QRCode from "qrcode";
-import { getSendURI } from "banano-uri-generator";
-import { convertBanToRaw } from "../helper";
 import { BanFamContext } from "../context/BananoContext";
-
 import { useLocation } from "react-router-dom";
 
 const BananoUser = (props) => {
@@ -14,26 +10,6 @@ const BananoUser = (props) => {
   const { banAmount } = data.state;
 
   const [addressCopy, setCopy] = useState(false);
-  const [qrBan, setQR] = useState("");
-
-  useEffect(() => {
-    console.log(banUser);
-    sendBananas(address, data.state.banAmount);
-  }, [address]);
-  const sendBananas = (banAddress, banAmount) => {
-    QRCode.toString(
-      getSendURI(banAddress, convertBanToRaw(banAmount), `BananoDonate tip`),
-      {
-        type: "svg",
-      },
-      function (error, value) {
-        if (value) {
-          console.log(value);
-          setQR(value);
-        }
-      }
-    );
-  };
 
   return (
     <>
@@ -51,7 +27,11 @@ const BananoUser = (props) => {
       </section>
       <section className={`main__user--section ban--amount`}>
         <img src="../../images/icon128.png" className="pepe--user qr--code" />
-        <QrCodeArea qrBan={qrBan} addressCopy={addressCopy} />
+        <QrCodeArea
+          addressCopy={addressCopy}
+          banAddress={address}
+          banAmount={banAmount}
+        />
       </section>
       <AddressUser
         address={address}
@@ -84,12 +64,14 @@ const AddressUser = ({ address, setCopy, wasCopied }) => {
   );
 };
 
-const QrCodeArea = ({ qrBan, addressCopy }) => {
+const QrCodeArea = ({ addressCopy, banAddress, banAmount }) => {
   return (
     <section className="qrcode--section">
       <img
-        src={`data:image/svg+xml;utf8,${encodeURIComponent(qrBan)}`}
-        width="150"
+        src={`https://banano.id/pay/api2.php?wallet=${banAddress}&amount=${banAmount}`}
+        width="215"
+        className="animate-qr"
+        lazy
       />
       {addressCopy ? (
         <p

@@ -11,6 +11,7 @@ export const UserReducer = (state, action) => {
     case "ADD_USER_PAGE":
       return { ...state, userPage: action.payload };
     case "ACTIVE_USER":
+      console.log(action.payload);
       return {
         ...state,
         userPage: state.userPage.bananoDonateEntries.filter(

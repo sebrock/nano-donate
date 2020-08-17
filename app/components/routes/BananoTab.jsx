@@ -1,44 +1,55 @@
-import React, { useState, useEffect, useReducer, useContext } from "react";
+import React, { useState, useEffect, useCallback, useContext } from "react";
 import NotFoundUser from "../NotFoundUser";
 import { useHistory } from "react-router";
 import { BanFamContext } from "../context/BananoContext";
 
-const BananoTab = ({ user, ...props }) => {
+const BananoTab = ({ user }) => {
   const { banUser, dispatchBanUser } = useContext(BanFamContext);
-  const [userTabPage, setUserPage] = useState({});
   const [activeBan, setActiveBan] = useState(false);
   const [banAmount, setBanAmount] = useState({});
   const history = useHistory();
 
-  chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
-    try {
-      const userTab = user[tabs[0].id];
-      if (userTab) {
-        const { banActive, bananoDonateEntries } = userTab;
-        setActiveBan(banActive);
-        if (bananoDonateEntries) {
-          setUserPage(userTab);
+  const promiseGetTab = () => {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+        try {
+          const userTab = user[tabs[0].id];
+          if (userTab) {
+            const { banActive, bananoDonateEntries } = userTab;
+            setActiveBan(banActive);
+            if (bananoDonateEntries) {
+              resolve(userTab);
+            }
+          }
+        } catch (e) {
+          reject(e);
         }
-      }
-    } catch (e) {
-      console.log(e);
-      history.push("/not-found");
-    }
-  });
+      });
+    });
+  };
 
-  useEffect(() => {
-    if (Object.keys(userTabPage).length !== 0) {
-      userTabPage.bananoDonateEntries.forEach(
+  const addTabData = async () => {
+    try {
+      const data = await promiseGetTab();
+      data.bananoDonateEntries.forEach(
         (tab) =>
           tab.addressOwner === "This web page" &&
-          (tab.addressOwner = userTabPage.title)
+          (tab.addressOwner = data.title)
       );
-
-      dispatchBanUser({ type: "ADD_USER_PAGE", payload: userTabPage });
+      dispatchBanUser({ type: "ADD_USER_PAGE", payload: data });
+    } catch (e) {
+      console.log(e);
     }
+  };
 
+  const getTabData = useCallback(async () => {
+    await addTabData();
+  }, []);
+
+  useEffect(() => {
+    getTabData();
     return () => {};
-  }, [userTabPage]);
+  }, [getTabData]);
 
   if (!activeBan) {
     return <NotFoundUser />;
@@ -67,7 +78,7 @@ const BananoTab = ({ user, ...props }) => {
           {banUser.userPage &&
             banUser.userPage.bananoDonateEntries.map((user, index) => {
               return (
-                <>
+                <div key={index}>
                   <h2>
                     {banUser.userPage
                       ? banUser.userPage.bananoDonateEntries[index].addressOwner
@@ -75,7 +86,6 @@ const BananoTab = ({ user, ...props }) => {
                   </h2>
 
                   <form
-                    key={index}
                     onSubmit={(e) => {
                       e.preventDefault();
                       dispatchBanUser({
@@ -131,7 +141,7 @@ const BananoTab = ({ user, ...props }) => {
                       value={"1923"}
                     />
                   </div>
-                </>
+                </div>
               );
             })}
         </section>
