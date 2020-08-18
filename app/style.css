@@ -23,8 +23,10 @@ body {
 }
 .main__user--section {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
+  padding-left: 10px;
 }
 h1 {
   margin: 5px 0;
@@ -76,15 +78,21 @@ a p {
   height: 92px;
   align-self: flex-end;
 }
+
 .styleOfInput {
   width: 192px;
   font-family: "BanAddress";
   color: #2a2a2e;
+  border: 0;
+  padding-left: 5px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
+
 .user__form-tip {
   font-size: 14px;
   padding: 2px;
-  width: 490px;
+  width: auto;
   display: flex;
   height: auto;
 }
@@ -125,15 +133,17 @@ button:hover {
 }
 
 .button--donate__start {
-  margin-left: 5px;
   padding: 5px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .button--donate__auto {
-  width: 15%;
   font-size: 12px;
   padding: 5px;
+  height: 25px;
 }
+
 .button--donate__auto:not(:first-child) {
   margin-left: 5px;
 }
@@ -141,15 +151,16 @@ button:hover {
 .copy {
   height: 0;
   width: auto;
-  font-size: 16px;
+  font-size: 0.9em;
   background-color: rgba(87, 86, 86, 0.8);
   color: white;
   opacity: 0;
   margin: 0;
+  text-align: center;
 }
 
 .copy.done {
-  animation: blink 2s ease;
+  animation: blink 2.2s ease;
 }
 
 @keyframes blink {
@@ -158,8 +169,8 @@ button:hover {
   }
   50% {
     margin-top: 10px;
-    height: 25px;
-    padding: 5px;
+    height: auto;
+    padding: 3px;
     opacity: 1;
   }
   100% {
@@ -176,6 +187,10 @@ button:hover {
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 15px;
+}
+
+.main__user--creator:not(:first-of-type) {
+  margin-top: 5px;
 }
 
 .pepe--user.qr--code {
@@ -198,4 +213,7 @@ button:hover {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: monospace;
+}
+
+.animate-qr {
 }

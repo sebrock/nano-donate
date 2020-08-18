@@ -11,6 +11,7 @@ TODO.txt
 
 # compiled output
 /dist
+dist/extension/*
 /dist-desktop
 /tmp
 /out-tsc
