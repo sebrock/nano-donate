@@ -160,7 +160,7 @@ Our sincere thanks go to everyone in the BANANO community who contributed and su
 - MidNightSonne and andrecrjr for Brazilian Portuguese
 - YaroslavaWise and Nomina for Russian
 - Cristalla for Spanish
-- Tahadorukk | Guns'NRoses for Turkish
+- Tahadorukk '| Guns'NRoses for Turkish
 - Tu Hoang for Vietnamese
 - bbedward for reminding the jungle to support
 
