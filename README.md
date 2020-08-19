@@ -100,7 +100,7 @@ You can give your visitors a hint that your site is enabled for BananoDonate by 
 <a href="https://github.com/sebrock/banano-donate" target="_blank">
 <img border="0" src ="https://github.com/sebrock/banano-donate/blob/banano-dev/dist/images/ban-don-logo.png" 
      title="This site can receive donations via Banano-donate"  alt="This site can receive donations via Banano-donate" 
-     height="70"</img>
+     height="70"</img> </a>
 <!-- End Banano-donate logo -->
  ```
 The following image will be displayed:
@@ -133,6 +133,7 @@ The following sites are enabled to receive donations through banano-donate:
  - [drinkwater.fr](https://drinkwater.fr/) - Iazid´s site
  - [maffsclub.com/](https://maffsclub.com/) - Maff´s site
  - [bananospl.it](https://bananospl.it/) - Thoron174´s site
+ - [https://andrecrjr.github.io/](https://andrecrjr.github.io/) André´s site
 
 ## License
 
